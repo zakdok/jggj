@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>중국가자</title>
+    <!-- 외부 플러그인 및 폰트 CSS -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- // 외부 플러그인 및 폰트 CSS -->
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <!-- // 공통 css -->
+    <!-- 서브 페이지 css -->
+    <link rel="stylesheet" href="./assets/css/sub.css">
+    <!-- // 서브 페이지 css -->
+</head>
+<body>
+    <div id="wrapper">
+        <article id="contents">
+            <section id="login" class="login full-layout">
+                <div class="login__area full-layout__area">
+                    <div class="full-layout__wrap">
+                        <div class="login__wrap">
+                            <div class="login__text-area">
+                                <div class="login__icon-wrap">
+                                    <p class="login__icon"><img src="./assets/images/login11.svg" alt="icon"></p>
+                                </div>
+                                <div class="login__text-wrap">
+                                    <p class="login__title point-color">지금 가입하고<br>다양한 중국 여행 상품 구경해요!</p>
+                                    <p class="login__description">중국여행은 역시 중국가자와 함께!</p>
+                                </div>
+                            </div>
+                            <div class="common-form">
+                                <div class="common-input-list">
+                                    <ul class="common-input-list__wrap">
+                                        <!-- error class 추가 시 에러 활성화 -->
+                                        <!-- <li class="common-input-list__item error"> -->
+                                        <li class="common-input-list__item">
+                                            <div class="common-input-list__inner">
+                                                <div class="common-input-list__title-wrap">
+                                                    <p class="common-input-list__title">이메일 주소</p>
+                                                </div>
+                                                <div class="common-input-list__field">
+                                                    <div class="common-input-list__field--inner">
+                                                        <input type="text" placeholder="이메일 주소를 입력해 주세요.">
+                                                    </div>
+                                                    <div class="common-input-list__error">
+                                                        <p class="common-input-list__error--text">
+                                                            올바른 이메일 주소를 입력해 주세요.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="common-input-list__item">
+                                            <div class="common-input-list__inner">
+                                                <div class="common-input-list__title-wrap">
+                                                    <p class="common-input-list__title">비밀번호</p>
+                                                </div>
+                                                <div class="common-input-list__field">
+                                                    <div class="common-input-list__field--inner">
+                                                        <input type="text" placeholder="비밀번호를 입력해 주세요.">
+                                                        <p class="common-input-list__icon"><img src="./assets/images/input-password-icon-36x36.svg" alt="password icon"></p>
+                                                    </div>
+                                                    <div class="common-input-list__error">
+                                                        <p class="common-input-list__error--text">
+                                                            올바른 비밀번호를 입력해 주세요.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="common-label-list">
+                                    <ul class="common-label-list__wrap">
+                                        <li class="common-label-list__item">
+                                            <div class="common-label-list__inner">
+                                                <div class="common-label-list__label">
+                                                    <input type="checkbox" name="saveId" id="saveId">
+                                                    <label for="saveId">아이디 저장</label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="common-submit-button">
+                                    <div class="common-button-wrap">
+                                        <!-- 
+                                            on class 추가 시 활성화
+                                            <button class="common-button on">
+                                        -->
+                                        <button class="common-button">
+                                            <p class="common-button__text">로그인</p>
+                                        </button>
+                                    </div>
+                                </div>
+                                <nav class="login-nav">
+                                    <ul class="login-nav__list">
+                                        <li class="login-nav__item">
+                                            <div class="login-nav__inner">
+                                                <a href="#;" class="login-nav__button">
+                                                    <p class="login-nav__text">아이디 찾기</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="login-nav__item">
+                                            <div class="login-nav__inner">
+                                                <a href="#;" class="login-nav__button">
+                                                    <p class="login-nav__text">비밀번호 찾기</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="login-nav__item">
+                                            <div class="login-nav__inner">
+                                                <a href="#;" class="login-nav__button">
+                                                    <p class="login-nav__text">회원가입</p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <div class="social-login">
+                                <div class="social-login__title">
+                                    <div class="social-login__title-wrap">
+                                        <p class="social-login__title-text">소셜 아이디로 간편 로그인</p>
+                                    </div>
+                                </div>
+                                <nav class="social-login__list">
+                                    <ul class="social-login__list-wrap">
+                                        <li class="social-login__item">
+                                            <div class="social-login__inner">
+                                                <a href="#;" class="social-login__button">
+                                                    <p class="social-login__icon"><img src="./assets/images/login-sns-kakao.svg" alt="kakao login"></p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="social-login__item">
+                                            <div class="social-login__inner">
+                                                <a href="#;" class="social-login__button">
+                                                    <p class="social-login__icon"><img src="./assets/images/login-sns-naver.svg" alt="naver login"></p>
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!-- 모달 팝업 -->
+        <!-- <div class="common-modal">
+            <div class="common-modal__bg">background</div>
+            <div class="common-modal__area">
+                <div class="common-modal__wrap">
+                    <div class="common-modal__inner">
+                        <div class="common-modal__body">
+                            <div class="common-modal__text-area">
+                                <div class="common-modal__icon-wrap">
+                                    <p class="common-modal__icon"><img src="./assets/images/modal-warning-ico-40x40.svg" alt="icon"></p>
+                                </div>
+                                <div class="common-modal__text-wrap">
+                                    <p class="common-modal__text">
+                                        입력하신 이메일 주소나<br>
+                                        비밀번호가 일치하지 않아요.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="common-modal__button-area">
+                            <div class="common-modal__button-wrap">
+                                <a href="#;" class="common-modal__button">
+                                    <p class="common-modal__button-text">닫기</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</body>
+</html>
