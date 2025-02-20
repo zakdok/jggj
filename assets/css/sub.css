@@ -107,3 +107,8 @@
 .social-login__inner{}
 .social-login__button{}
 .social-login__icon{}
+
+/* join */
+#join{
+    padding: 16px 20px 46px;
+}

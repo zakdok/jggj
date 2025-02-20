@@ -13,7 +13,7 @@ h3,
 h4,
 h5,
 h6,
-p{word-break:keep-all; transform: rotate(0.04deg);}
+p{word-break:keep-all; transform: rotate(0.04deg);line-height: 1.3;}
 html{position:relative;font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;}
 body{overflow-x: hidden;line-height:1;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,small{display:block;}
