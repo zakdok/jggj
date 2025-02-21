@@ -560,10 +560,15 @@ body{
     font-weight: 400;
 }
 .full-layout{
+    position: relative;
     display: flex;
     align-items: center;
     height: 100vh;
     margin: -60px 0 -64px;
+}
+.full-layout.align-items-start{
+    padding: 62px 0 120px;
+    align-items: flex-start;
 }
 .full-layout__area{
     width: 100%;
@@ -820,6 +825,12 @@ body{
     color: #C6C9D1;
     text-align: center;
 }
+.common-button.common-button-storke-mint{
+    border: 1px solid #57B9B1;
+    background-color: #fff;
+    color: #57B9B1;
+    font-weight: 600;
+}
 .common-button.on{
     background-color: #57B9B1;
     color: #fff;
@@ -1023,3 +1034,74 @@ input:focus-visible{
     justify-content: center;
 }
 .common-bottom-sheet-popup__button-text{}
+.find-account{}
+.common__header-tab{}
+.common__header-tab__nav{}
+.common__header-tab__list{
+    display: flex;
+    align-items: center;
+}
+.common__header-tab__item{
+    width: 50%;
+}
+.common__header-tab__item--active{}
+.common__header-tab__button{
+    position: relative;
+    display: flex;
+    height: 52px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.common__header-tab__button::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 3px;
+}
+.common__header-tab__text{}
+.common__header-tab__item--active .common__header-tab__button::before{
+    background-color: #57B9B1;
+}
+.common__header-tab__item--active .common__header-tab__button .common__header-tab__text{
+    color: #57B9B1 !important;
+    font-weight: 600 !important;
+}
+.common-bottom-button-list{
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    width: 100%;
+    padding: 0 20px;
+}
+.common-bottom-button-list__wrap{
+    margin: -12px 0 0;
+}
+.common-bottom-button-list__item{
+    padding: 12px 0 0;
+}
+.common-bottom-button-list__inner{}
+.common-bottom-button-list__button-wrap{}
+.common-bottom-button-list__button{}
+.common-toast-popup{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 999999;
+    padding: 0 20px 16px;
+}
+.common-toast-popup__text-area{
+    display: flex;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(108, 111, 117, 0.7);
+    border-radius: 8px;
+}
+.common-toast-popup__text-wrap{}
+.common-toast-popup__text{}

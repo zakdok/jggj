@@ -112,3 +112,59 @@
 #join{
     padding: 16px 20px 46px;
 }
+
+/* find account */
+.find-account__area{
+    padding: 40px 20px;
+}
+.find-account__area .common-form{
+    margin: 20px 0 0;
+}
+.find-account__title-area{}
+.find-account__title-wrap{}
+.find-account__title{
+    line-height: 1.4;
+}
+.find-account__button-wrap{
+    margin: 32px 0 0;
+}
+.find-id-result{
+    text-align: center;
+}
+.find-id-result__area{}
+.find-id-result__wrap{}
+.find-id-result__text-area{}
+.find-id-result__icon-wrap{}
+.find-id-result__icon{}
+.find-id-result__title-wrap{
+    margin: 24px 0 0;
+}
+.find-id-result__title{}
+.find-id-result__title strong{
+    margin-right: 4px;
+}
+.find-id-result__description{
+    margin: 16px 0 0;
+}
+.find-id-result__email{
+    margin: 32px 0 0;
+    text-decoration: underline;
+}
+.find-password-result{}
+.find-password-result .common-form{
+    margin: 40px 0 0;
+}
+.find-password-result__area{}
+.find-password-result__wrap{}
+.find-password-result__text-area{
+    text-align: center;
+}
+.find-password-result__icon-wrap{}
+.find-password-result__icon{}
+.find-password-result__title-wrap{
+    margin: 20px 0 0;
+}
+.find-password-result__title{}
+.find-password-result__description{
+    margin: 8px 0 0;
+}
