@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>중국가자</title>
+    <!-- 외부 플러그인 및 폰트 CSS -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- // 외부 플러그인 및 폰트 CSS -->
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <!-- // 공통 css -->
+    <!-- 서브 페이지 css -->
+    <link rel="stylesheet" href="./assets/css/sub.css">
+    <!-- // 서브 페이지 css -->
+</head>
+<body>
+    <div id="wrapper">
+        <div id="headerOuter"></div>
+        <article id="contents">
+            <div id="mypage" class="mypage">
+                <section class="mypage__profile">
+                    <div class="mypage__user-info">
+                        <div class="mypage__profile-wrap margin-bottom__16">
+                            <button class="mypage__profile-button">
+                                <img src="./assets/images/profile-gray-300-112x112.svg" alt="profile image">
+                            </button>
+                        </div>
+                        <div class="mypage__user-info-text margin-bottom__12">
+                            <p class="mypage__name c-gray__900 font-size__18 font-weight__600">최재용</p>
+                            <p class="mypage__email c-gray__600 font-size__14 font-weight__300">example@example.com</p>
+                        </div>
+                        <div class="mypage__user-status">
+                            <ul class="mypage__status-list">
+                                <li class="mypage__status-item">
+                                    <a href="#;" class="mypage__status-button">
+                                        <p class="mypage__status-text c-mint__500 font-size__18 font-weight__700 margin-bottom__4">10</p>
+                                        <p class="mypage__status-title c-gray__700 font-size__14 font-weight__400">내 후기</p>
+                                    </a>
+                                </li>
+                                <li class="mypage__status-item">
+                                    <a href="#;" class="mypage__status-button">
+                                        <p class="mypage__status-text c-mint__500 font-size__18 font-weight__700 margin-bottom__4">5</p>
+                                        <p class="mypage__status-title c-gray__700 font-size__14 font-weight__400">찜한 상품</p>
+                                    </a>
+                                </li>
+                                <li class="mypage__status-item">
+                                    <a href="#;" class="mypage__status-button">
+                                        <p class="mypage__status-text c-mint__500 font-size__18 font-weight__700 margin-bottom__4">1000</p>
+                                        <p class="mypage__status-title c-gray__700 font-size__14 font-weight__400">포인트</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <div class="common-line__gray">line</div>
+                <section class="mypage__history common-box__padding-24-20">
+                    <div class="mypage__history-title margin-bottom__20">
+                        <p class="mypage__history-text c-gray__900 font-size__20 font-weight__600">최근 예약 상품</p>
+                    </div>
+                    <div class="mypage__history-list margin-bottom__28">
+                        <ul class="mypage__history-items">
+                            <li class="mypage__history-item">
+                                <div class="mypage__history-date margin-bottom__16">
+                                    <p class="mypage__history-date-text c-gray__800 font-size__14 font-weight__600">2025.01.17</p>
+                                </div>
+                                <div class="mypage__history-product">
+                                    <ul class="mypage__product-list">
+                                        <li class="mypage__product-item">
+                                            <!-- 
+                                            예약 중 : class 추가 없음
+                                            예약완료 : result class 추가
+                                            예약취소 : cancel class 추가
+                                            -->
+                                            <div class="mypage__product-inner">
+                                                <div class="mypage__product-status margin-bottom__12 font-size__12 font-weight__400">예약 중</div>
+                                                <div class="mypage__product-box">
+                                                    <div class="mypage__product-thumb">
+                                                        <a href="#;"><img src="./assets/images/main-row11.png" alt="thumbnail"></a>
+                                                    </div>
+                                                    <div class="mypage__product-info">
+                                                        <p class="mypage__product-category font-size__12 font-weight__300 margin-bottom__4">현지 숙박</p>
+                                                        <a href="#;" class="mypage__product-title font-weight__600 font-size__14 margin-bottom__8">
+                                                            [충칭여행] 중경숙소 산바이쥐 게스트하우스 호텔
+                                                        </a>
+                                                        <p class="mypage__product-date font-size__12 font-weight__300">이용할 날짜 : 2025.01.01 - 2025.01.22</p>
+                                                        <a href="#;" class="mypage__product-icon">
+                                                            <img src="./assets/images/right-arrow-AEAEAE-24x24.svg" alt="arrow icon">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <p class="mypage__product-option font-size__12 font-weight__300">
+                                                    상품 옵션 : 디럭스 더블 룸, 성인 1명, 어린이 2명
+                                                </p>
+                                            </div>
+                                        </li>
+                                        <li class="mypage__product-item">
+                                            <div class="mypage__product-inner">
+                                                <div class="mypage__product-status font-size__12 font-weight__400 result">예약완료</div>
+                                                <div class="mypage__product-box">
+                                                    <div class="mypage__product-thumb">
+                                                        <a href="#;"><img src="./assets/images/main-row11.png" alt="thumbnail"></a>
+                                                    </div>
+                                                    <div class="mypage__product-info">
+                                                        <p class="mypage__product-category font-size__12 font-weight__300 margin-bottom__4">현지 숙박</p>
+                                                        <a href="#;" class="mypage__product-title font-weight__600 font-size__14 margin-bottom__8">
+                                                            [충칭여행] 중경숙소 산바이쥐 게스트하우스 호텔
+                                                        </a>
+                                                        <p class="mypage__product-date font-size__12 font-weight__300">이용할 날짜 : 2025.01.01 - 2025.01.22</p>
+                                                        <a href="#;" class="mypage__product-icon">
+                                                            <img src="./assets/images/right-arrow-AEAEAE-24x24.svg" alt="arrow icon">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <p class="mypage__product-option font-size__12 font-weight__300">
+                                                    상품 옵션 : 디럭스 더블 룸, 성인 1명, 어린이 2명
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="mypage__history-item">
+                                <div class="mypage__history-date margin-bottom__16">
+                                    <p class="mypage__history-date-text c-gray__800 font-size__14 font-weight__600">2025.01.17</p>
+                                </div>
+                                <div class="mypage__history-product">
+                                    <ul class="mypage__product-list">
+                                        <li class="mypage__product-item">
+                                            <div class="mypage__product-inner">
+                                                <div class="mypage__product-status font-size__12 font-weight__400 cancel">예약취소</div>
+                                                <div class="mypage__product-box">
+                                                    <div class="mypage__product-thumb">
+                                                        <a href="#;"><img src="./assets/images/main-row11.png" alt="thumbnail"></a>
+                                                    </div>
+                                                    <div class="mypage__product-info">
+                                                        <p class="mypage__product-category font-size__12 font-weight__300 margin-bottom__4">현지 숙박</p>
+                                                        <a href="#;" class="mypage__product-title font-weight__600 font-size__14 margin-bottom__8">
+                                                            [충칭여행] 중경숙소 산바이쥐 게스트하우스 호텔중경숙소 산바이쥐 게스트하우스 호텔중경숙소 산바이쥐 게스트하우스 호텔중경숙소 산바이쥐 게스트하우스 호텔
+                                                        </a>
+                                                        <p class="mypage__product-date font-size__12 font-weight__300">이용할 날짜 : 2025.01.01 - 2025.01.22</p>
+                                                        <a href="#;" class="mypage__product-icon">
+                                                            <img src="./assets/images/right-arrow-AEAEAE-24x24.svg" alt="arrow icon">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <p class="mypage__product-option font-size__12 font-weight__300">
+                                                    상품 옵션 선택 내용 : 디럭스 더블 룸, 1인 / 5인승, 성인 1명 / 어린이 2 / 메이트+송화강 입장권+빙설대세계입장권
+                                                </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mypage__history-footer">
+                        <a href="#;" class="mypage__history-button button--gray-stroke height-52 enabled">
+                            <p class="text">
+                                예약 상품 전체 보기
+                            </p>
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </article>
+        <section class="customer-center common-box__padding-24-20">
+            <div class="customer-center__area">
+                <div class="customer-center__text">
+                    <div class="customer-center__title-wrap">
+                        <p class="customer-center__title">고객센터</p>
+                        <p class="customer-center__time point-color">09:00 ~ 18:00</p>
+                    </div>
+                    <div class="customer-center__text-wrap">
+                        <p class="customer-center__info">대표번호 02-6337-8282</p>
+                        <p class="customer-center__info c-gray__1">주말, 공휴일 휴무</p>
+                        <p class="customer-center__info c-gray__1">점심시간: 12:00 ~ 13:00</p>
+                    </div>
+                </div>
+                <div class="customer-center__buttons">
+                    <div class="customer-center__button-wrap">
+                        <a href="#;" class="button button--point-stroke">
+                            <p class="text point-color">
+                                1:1 채팅 문의하기
+                            </p>
+                        </a>
+                    </div>
+                    <div class="customer-center__button-wrap">
+                        <a href="tel:02-6337-8282" class="button button--point-stroke">
+                            <p class="text point-color">
+                                전화 문의하기
+                            </p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="common-line__gray">line</div>
+        <section class="underline-button">
+            <div class="underline-button__area">
+                <div class="underline-button__wrap">
+                    <a href="#;" class="underline-button__button">
+                        <p class="underline-button__text c-gray__800 font-size__14 font-weight__300">로그아웃</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        // header.html 파일을 불러와서 삽입
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("headerOuter").innerHTML = data)
+            .catch(error => console.error("헤더 로드 실패:", error));
+    </script>
+</body>
+</html>
