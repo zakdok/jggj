@@ -175,8 +175,12 @@
 }
 .mypage__user-info{
     text-align: center;
+    font-size: 0;
 }
-.mypage__profile-wrap{}
+.mypage__profile-wrap{
+    position: relative;
+    display: inline-block;
+}
 .mypage__profile-button{
     width: 112px;
     height: 112px;
@@ -190,6 +194,12 @@
     height: 100%;
     object-fit: cover;
 }
+.mypage__profile-modify-button{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.mypage__profile-modify-button img{}
 .mypage__user-info-text{}
 .mypage__name{}
 .mypage__email{}
@@ -358,3 +368,93 @@
 }
 .mypage__history-footer{}
 .mypage__history-button{}
+.mypage-info-modify{}
+.mypage-info-modify__header{}
+.mypage-info-modify__header-wrap{}
+.mypage-info-modify__header-text{}
+.mypage-info-modify__list{}
+.mypage-info-modify__list-wrap{
+    margin: -12px 0 0;
+}
+.mypage-info-modify__item{
+    padding: 12px 0 0;
+}
+.mypage-info-modify__inner{
+    display: flex;
+}
+.mypage-info-modify__title-area{
+    width: 110px;
+    max-width: 110px;
+    min-width: 110px;
+}
+.mypage-info-modify__title-wrap{}
+.mypage-info-modify__title-text{
+    height: 45px;
+    line-height: 45px;
+}
+.mypage-info-modify__text-area{
+    width: 100%;
+    padding-left: 16px;
+}
+.mypage-info-modify__text-wrap{
+    position: relative;
+}
+.mypage-info-modify__text-con{}
+.mypage-info-modify__text{
+    height: 45px;
+    line-height: 45px;
+}
+.mypage-info-modify__button-wrap{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);-moz-transform: translateY(-50%);-webkit-transform: translateY(-50%);-o-transform: translateY(-50%);
+}
+.mypage-info-modify__button{
+    display: flex;
+    width: 44px;
+    height: 35px;
+    border: 1px solid #D1D4DA;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
+.mypage-info-modify__button-text{}
+.mypage-info-modify__toggle-button-wrap{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);-moz-transform: translateY(-50%);-webkit-transform: translateY(-50%);-o-transform: translateY(-50%);
+}
+.mypage-info-modify__toggle-button{
+    position: relative;
+    width: 44px;
+    height: 24px;
+    text-indent: -9999px;
+    overflow: hidden;
+    background-color: #E4E7EA;
+    border-radius: 50px;
+}
+.mypage-info-modify__toggle-icon{
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: .25s;-moz-transition: .25s;-webkit-transition: .25s;-o-transition: .25s;
+}
+.mypage-info-modify__toggle-button.on{
+    background-color: #57B9B1;
+}
+.mypage-info-modify__toggle-button.on .mypage-info-modify__toggle-icon{
+    left: 22px;
+}
+.mypage-info-modify__icon-wrap{
+    margin-right: -16px;
+}
+.mypage-info-modify__icon{
+    padding-right: 16px;
+}
