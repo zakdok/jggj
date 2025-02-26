@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>중국가자</title>
+    <!-- 외부 플러그인 및 폰트 CSS -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- // 외부 플러그인 및 폰트 CSS -->
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <!-- // 공통 css -->
+    <!-- 서브 페이지 css -->
+    <link rel="stylesheet" href="./assets/css/sub.css">
+    <!-- // 서브 페이지 css -->
+</head>
+<body>
+    <div id="wrapper">
+        <article id="contents">
+            <section id="findIdResult" class="find-password-result full-layout align-items-start">
+                <div class="find-password-result__area full-layout__area">
+                    <div class="find-password-result__wrap full-layout__wrap">
+                        <div class="common-result-area">
+                            <div class="common-result-wrap">
+                                <div class="find-password-result__text-area">
+                                    <div class="find-password-result__title-wrap">
+                                        <p class="find-password-result__title c-gray__900 font-size__20 font-weight__700 margin-bottom__16">
+                                            본인 계정 인증
+                                        </p>
+                                        <p class="find-password-result__description c-gray__700 font-weight__300 font-size__14">
+                                            고객님의 소중한 정보를 보호하고<br>
+                                            타인의 악용 및 부정 탈퇴를 방지하기 위해<br>
+                                            탈퇴 시 본인 인증 절차를 필수로 진행하고 있습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="common-form">
+                                    <div class="common-input-list">
+                                        <ul class="common-input-list__wrap">
+                                            <li class="common-input-list__item">
+                                                <div class="common-input-list__inner">
+                                                    <div class="common-input-list__title-wrap">
+                                                        <p class="common-input-list__title">이메일 주소</p>
+                                                    </div>
+                                                    <div class="common-input-list__field">
+                                                        <div class="common-input-list__field--inner">
+                                                            <input type="text" placeholder="이메일 주소를 입력해 주세요.">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="common-input-list__item">
+                                                <div class="common-input-list__inner">
+                                                    <div class="common-input-list__title-wrap">
+                                                        <p class="common-input-list__title">비밀번호</p>
+                                                    </div>
+                                                    <div class="common-input-list__field">
+                                                        <div class="common-input-list__field--inner">
+                                                            <input type="text" placeholder="비밀번호를 입력해 주세요.">
+                                                            <p class="common-input-list__icon"><img src="./assets/images/input-password-icon-36x36.svg" alt="password icon"></p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="common-guidance">
+                                    <div class="common-guidance__text-area bgc-gray__200">
+                                        <div class="common-guidance__text-wrap">
+                                            <p class="common-guidance__title c-gray__800 font-size__16 font-weight__600 margin-bottom__16">회원탈퇴안내</p>
+                                            <p class="common-guidance__text c-gray__700 font-size__14 font-weight__300">
+                                                ① 회원 탈퇴 후 동일한 개인정보(이름, 전화번호, 이메일 등)를 사용할 경우, 30일 동안 재가입이 불가능합니다.<br><br>
+                                                ② SNS 계정으로 가입한 경우, 탈퇴 후 해당 소셜 계정으로 바로 재가입이 가능합니다. SNS 계정 탈퇴는 각 소셜 플랫폼에서 진행해 주세요!<br><br>
+                                                ③ 회원 탈퇴 전까지 개인정보는 안전하게 유지되며, 탈퇴 즉시 영구 삭제됩니다.<br><br>
+                                                ④ 탈퇴 즉시 적립금은 소멸됩니다. 또한, 결제 및 예약 내역은 복구되지 않습니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="common-guidance__label">
+                                        <div class="common-guidance__label-wrap">
+                                            <input type="checkbox" id="guidance-agree">
+                                            <label for="guidance-agree">
+                                                <p class="common-guidance__label-text c-gray__800 font-size__14 font-weight__300">
+                                                    위 내용을 모두 확인했으며, 이에 동의합니다.
+                                                </p>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-bottom-button-list">
+                    <ul class="common-bottom-button-list__wrap">
+                        <li class="common-bottom-button-list__item">
+                            <div class="common-bottom-button-list__inner">
+                                <div class="common-bottom-button-list__button-wrap common-button-wrap">
+                                    <!-- on class 추가 시 활성화 -->
+                                    <a href="#;" class="common-bottom-button-list__button common-button font-size__16">
+                                        탈퇴하기
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+    </div>
+</body>
+</html>
