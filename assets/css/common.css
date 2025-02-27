@@ -678,6 +678,8 @@ body{
     display: flex;
     align-items: center;
     height: 100vh;
+    height: -webkit-fill-available;
+    height: fill-available;
     margin: -60px 0 -64px;
 }
 .full-layout.align-items-start{
