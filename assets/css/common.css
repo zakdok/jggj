@@ -1,4 +1,7 @@
 /* header */
+#wrapper{
+    overflow: hidden;
+}
 #header{
     position: fixed;
     left: 0;
@@ -1332,3 +1335,7 @@ input:focus-visible{
 .common-modal__button--cancel{}
 .common-modal__button--confirm{}
 .common-modal__confirm-button-text{}
+
+.ch-plugin .ch-plugin-script{
+    min-width: 0 !important;
+}
