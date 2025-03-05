@@ -1,7 +1,4 @@
 /* header */
-#wrapper{
-    overflow: hidden;
-}
 #header{
     position: fixed;
     left: 0;
@@ -348,7 +345,8 @@
 .bottom-fixed-nav__icon img{}
 
 /* common style */
-body{
+#wrapper{
+    overflow: hidden;
     padding: 60px 0 64px;
 }
 .point-color{
