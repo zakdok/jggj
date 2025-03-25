@@ -265,6 +265,9 @@
     border-radius: 50%;
     background-color: #E4E7EA;
 }
+.mypage__history-list2 .mypage__history-item::before{
+    display: none;
+}
 .mypage__history-date{}
 .mypage__history-date-text{
     line-height: 20px;
@@ -300,8 +303,15 @@
     color: #FF5C5C;
     background-color: #FFDEDE;
 }
+.mypage__product-status.wait{
+    color: #49C652;
+    background-color: #DDF5DF;
+}
 .mypage__product-box{
     display: flex;
+}
+.mypage__history-list2 .mypage__product-box{
+    align-items: center;
 }
 .mypage__product-thumb{
     width: 80px;
@@ -324,6 +334,9 @@
     width: 100%;
     padding-left: 9px;
     padding-right: 45px;
+}
+.mypage__history-list2 .mypage__product-info{
+    padding-right: 0;
 }
 .mypage__product-category{
     color: #474747;
@@ -364,7 +377,18 @@
     padding: 8px;
     background-color: #F3F6F9;
     color: #6C6F75;
-    line-height: 1.4;
+    line-height: 17px;
+}
+.mypage__history-list2 .mypage__product-option-area{
+    margin: 8px 0 0;
+    padding: 0 16px 8px;
+    background-color: #F3F6F9;
+    color: #6C6F75;
+    border-radius: 8px;
+}
+.mypage__history-list2 .mypage__product-option{
+    padding: 8px 0 0;
+    margin: 0;
 }
 .mypage__history-footer{}
 .mypage__history-button{}
@@ -458,3 +482,52 @@
 .mypage-info-modify__icon{
     padding-right: 16px;
 }
+/* MVP 주문 정보 */
+.order-info-top{
+    padding: 20px 20px 32px;
+}
+.order-info-top__order{}
+.order-info-top__reserver{
+    margin: 24px 0 0;
+    padding: 24px 0 0;
+    border-top: 1px solid #E4E7EA;
+}
+.order-info-top__title-area{}
+.order-info-top__title{}
+.order-info-top__text-wrap{
+    margin: -8px 0 0;
+}
+.order-info-top__text-con{
+    display: flex;
+    align-items: center;
+    padding: 8px 0 0;
+}
+.order-info-top__text-title{
+    width: 88px;
+    min-width: 88px;
+    max-width: 88px;
+}
+.order-info-top__reserver .order-info-top__text-title,
+.order-info-top__pay .order-info-top__text-title{
+    width: 120px;
+    min-width: 120px;
+    max-width: 120px;
+}
+.order-info-top__text-value{}
+.order-info-botton{
+    padding: 32px 20px;
+}
+.order-info-bottom__total{
+    margin: 16px 0 0;
+    padding: 16px 0 0;
+    border-top: 1px solid #E4E7EA;
+}
+.order-info-bottom__total__text-con{
+    display: flex;
+}
+.order-info-bottom__total__text-title{
+    width: 120px;
+    min-width: 120px;
+    max-width: 120px;
+}
+.order-info-bottom__total__text-value{}

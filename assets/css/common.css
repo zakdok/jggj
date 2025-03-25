@@ -31,7 +31,9 @@
 #header .header__area .header__wrap .header__menu .header__menu-button-wrap .header__menu-button{}
 #header .header__area .header__wrap .header__menu .header__menu-button-wrap .header__menu-button img{}
 #header .header__area--style-title{}
-#header .header__area--style-title .header__wrap{}
+#header .header__area--style-title .header__wrap{
+    min-height: 60px;
+}
 #header .header__area--style-title .header__title-wrap{
     display: flex;
     height: 60px;
@@ -953,6 +955,9 @@
     color: #C6C9D1;
     text-align: center;
 }
+.common-button.height-40{
+    height: 40px;
+}
 .common-button.height-48{
     height: 48px;
 }
@@ -965,6 +970,20 @@
 .common-button.on{
     background-color: #57B9B1;
     color: #fff;
+}
+.common-button.common-right-arrow{
+    position: relative;
+    padding-right: 40px;
+    padding-left: 8px;
+}
+.common-button.common-right-arrow .ico{
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);-moz-transform: translateY(-50%);-webkit-transform: translateY(-50%);-o-transform: translateY(-50%);
+}
+.white-image img{
+    filter: brightness(0) invert(1);
 }
 .common-button__text{
     font-size: 16px;
@@ -1405,6 +1424,15 @@ input:focus-visible{
     #sidebar{
         position: absolute;
     }
+    /* popup */
+    .common-modal,
+    .privacy-modal-popup,
+    .common-bottom-sheet-popup,
+    .common-toast-popup{
+        width: 345px;
+        left: 50%;
+        margin-left: 10px;
+    }
 }
 /* sorting list */
 .sorting-popup{}
@@ -1583,3 +1611,4 @@ input:focus-visible{
     font-size: 14px;
     font-weight: 700;
 }
+
