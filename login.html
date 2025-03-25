@@ -18,6 +18,16 @@
     <!-- // 서브 페이지 css -->
 </head>
 <body>
+    <!-- 1440 bg -->
+    <div id="bg1440"></div>
+    <script>
+    // bg1440.html 파일을 불러와서 삽입
+    fetch("bg1440.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("bg1440").innerHTML = data)
+        .catch(error => console.error("백그라운드 로드 실패:", error));
+    </script>
+    <!-- // 1440 bg -->
     <div id="wrapper">
         <article id="contents">
             <section id="login" class="login full-layout">
