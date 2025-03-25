@@ -1352,7 +1352,7 @@ input:focus-visible{
 .full-screen__content-area{
     display: flex;
     height: 100dvh;
-    max-width: 1190px;
+    max-width: 710px;
     padding-right: 410px;
     margin: 0 auto;
     align-items: flex-end;
@@ -1388,7 +1388,7 @@ input:focus-visible{
         display: block;
     }
     body{
-        max-width: 1190px;
+        max-width: 710px;
         margin: 0 auto;
         display: flex;
         justify-content: flex-end;
@@ -1550,7 +1550,7 @@ input:focus-visible{
 .more-items__category{
     color: #8D8F94;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 500;
 }
 .more-items__subject{
     margin: 4px 0 0;
@@ -1574,10 +1574,12 @@ input:focus-visible{
 .more-items__old-price{
     margin-right: 4px;
     font-size: 12px;
-    font-weight: 400;
+    font-weight: 500;
     color: #B4B7BE;
     text-decoration: line-through;
 }
 .more-items__price{
     color: #57B9B1;
     font-size: 14px;
+    font-weight: 700;
+}
