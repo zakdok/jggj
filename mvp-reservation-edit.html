@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>중국가자</title>
+    <!-- 외부 플러그인 및 폰트 CSS -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- // 외부 플러그인 및 폰트 CSS -->
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <!-- // 공통 css -->
+    <!-- 서브 페이지 css -->
+    <link rel="stylesheet" href="./assets/css/sub.css">
+    <!-- // 서브 페이지 css -->
+</head>
+<body>
+    <!-- 1440 bg -->
+    <div id="bg1440"></div>
+    <script>
+    // bg1440.html 파일을 불러와서 삽입
+    fetch("bg1440.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("bg1440").innerHTML = data)
+        .catch(error => console.error("백그라운드 로드 실패:", error));
+    </script>
+    <!-- // 1440 bg -->
+    <div id="wrapper">
+        <article id="contents">
+            <div class="warning-text margin-bottom__36">
+                <div class="warning-text__area bgc-red__100">
+                    <div class="warning-text__ico-wrap margin-bottom__4">
+                        <p class="warning-text__ico">
+                            <img src="./assets/images/warning-ico-24x24.svg" alt="icon">
+                        </p>
+                    </div>
+                    <div class="warning-text__text-wrap">
+                        <p class="warning-text__text c-red__500 font-size__14 font-weight__600">
+                            예약 완료된 상태에서는 정보 수정이 불가해요.<br>
+                            변경이 필요하다면 채널톡으로 문의주세요.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <section id="mvpReservationEdit" class="mvp-reservation-edit">
+                <div class="mvp-reservation-edit__area margin-bottom__48">
+                    <div class="mvp-reservation-edit__wrap common-box__padding-0-20 margin-bottom__24">
+                        <div class="common-form">
+                            <div class="common-form-title__area margin-bottom__20">
+                                <div class="common-form-title__wrap">
+                                    <p class="common-form-title__text font-size__20 font-weight__600">예약자 정보</p>
+                                </div>
+                                <div class="common-form-title__desc-wrap">
+                                    <p class="common-form-title__desc font-size__12 font-weight__500 c-gray__600">
+                                        *모두 필수 입력 사항 입니다!
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="common-input-list">
+                                <ul class="common-input-list__wrap">
+                                    <!-- 
+                                        에러 상황 시 error class 추가
+                                        비활성화 시 disabled class 추가
+                                     -->
+                                    <li class="common-input-list__item">
+                                        <div class="common-input-list__inner">
+                                            <div class="common-input-list__title-wrap">
+                                                <p class="common-input-list__title">한글 이름</p>
+                                            </div>
+                                            <div class="common-input-list__field">
+                                                <div class="common-input-list__field--inner">
+                                                    <input type="text" placeholder="한글 이름을 입력해 주세요.">
+                                                </div>
+                                            </div>
+                                            <div class="common-input-list__error">
+                                                <p class="common-input-list__error--text">
+                                                    형식에 맞지 않아요. 다시 입력해 주세요!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="common-input-list__item">
+                                        <div class="common-input-list__inner">
+                                            <div class="common-list__area">
+                                                <ul class="common-list__wrap list2 gap12">
+                                                    <li class="common-list__con">
+                                                        <div class="common-list__inner">
+                                                            <div class="common-input-list__title-wrap">
+                                                                <p class="common-input-list__title">영문 성</p>
+                                                            </div>
+                                                            <div class="common-input-list__field">
+                                                                <div class="common-input-list__field--inner">
+                                                                    <input type="text" placeholder="영문 성">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="common-list__con">
+                                                        <div class="common-list__inner">
+                                                            <div class="common-input-list__title-wrap">
+                                                                <p class="common-input-list__title">영문 이름</p>
+                                                            </div>
+                                                            <div class="common-input-list__field">
+                                                                <div class="common-input-list__field--inner">
+                                                                    <input type="text" placeholder="영문 이름">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="common-input-list__error">
+                                                <p class="common-input-list__error--text">
+                                                    형식에 맞지 않아요. 다시 입력해 주세요!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="common-input-list__item">
+                                        <div class="common-input-list__inner">
+                                            <div class="common-input-list__title-wrap">
+                                                <p class="common-input-list__title">생년월일</p>
+                                            </div>
+                                            <div class="common-list__area">
+                                                <ul class="common-list__wrap list3 gap19">
+                                                    <li class="common-list__con">
+                                                        <div class="common-list__inner">
+                                                            <div class="common-input-list__field">
+                                                                <!-- 
+                                                                select custom 이슈로 인해 input 태그로 대체 하였습니다.
+                                                                .common-input-list__field--inner 클릭 시 팝업 나오고 팝업에서 값 선택 시 value 조정 해주시면 감사하겠습니다.
+                                                                    -->
+                                                                <div class="common-input-list__field--inner">
+                                                                    <input type="text" placeholder="년도" readonly>
+                                                                    <p class="common-input-list__icon r16 align-right"><img src="./assets/images/down-arrow-ico-gray-700-8x4.svg" alt="password icon"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="common-list__con">
+                                                        <div class="common-list__inner">
+                                                            <div class="common-input-list__field">
+                                                                <div class="common-input-list__field--inner">
+                                                                    <input type="text" placeholder="월" readonly>
+                                                                    <p class="common-input-list__icon r16 align-right"><img src="./assets/images/down-arrow-ico-gray-700-8x4.svg" alt="password icon"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="common-list__con">
+                                                        <div class="common-list__inner">
+                                                            <div class="common-input-list__field">
+                                                                <div class="common-input-list__field--inner">
+                                                                    <input type="text" placeholder="일" readonly>
+                                                                    <p class="common-input-list__icon r16 align-right"><img src="./assets/images/down-arrow-ico-gray-700-8x4.svg" alt="password icon"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="common-input-list__error">
+                                                <p class="common-input-list__error--text">
+                                                    형식에 맞지 않아요. 다시 입력해 주세요!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 하단 + 예약자 추가 버튼 클릭 시 해당 element 추가 -->
+                        <div class="add-section margin-bottom__20">
+                            <p class="common-line">line</p>
+                            <div class="common-form">
+                                <div class="common-form-title__area margin-bottom__20">
+                                    <div class="common-form-title__wrap">
+                                        <p class="common-form-title__ico">
+                                            <button><img src="./assets/images/minus-ico-mint-500-24x24.svg" alt="icon"></button>
+                                        </p>
+                                        <p class="common-form-title__text font-size__20 font-weight__600">예약자 정보</p>
+                                    </div>
+                                    <div class="common-form-title__desc-wrap">
+                                        <p class="common-form-title__desc font-size__12 font-weight__500 c-gray__600">
+                                            *모두 필수 입력 사항 입니다!
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="common-input-list">
+                                    <ul class="common-input-list__wrap">
+                                        <!-- 에러 상황 시 error class 추가 -->
+                                        <li class="common-input-list__item">
+                                            <div class="common-input-list__inner">
+                                                <div class="common-input-list__title-wrap">
+                                                    <p class="common-input-list__title">한글 이름</p>
+                                                </div>
+                                                <div class="common-input-list__field">
+                                                    <div class="common-input-list__field--inner">
+                                                        <input type="text" placeholder="한글 이름을 입력해 주세요.">
+                                                    </div>
+                                                </div>
+                                                <div class="common-input-list__error">
+                                                    <p class="common-input-list__error--text">
+                                                        형식에 맞지 않아요. 다시 입력해 주세요!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="common-input-list__item">
+                                            <div class="common-input-list__inner">
+                                                <div class="common-list__area">
+                                                    <ul class="common-list__wrap list2 gap12">
+                                                        <li class="common-list__con">
+                                                            <div class="common-list__inner">
+                                                                <div class="common-input-list__title-wrap">
+                                                                    <p class="common-input-list__title">영문 성</p>
+                                                                </div>
+                                                                <div class="common-input-list__field">
+                                                                    <div class="common-input-list__field--inner">
+                                                                        <input type="text" placeholder="영문 성">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="common-list__con">
+                                                            <div class="common-list__inner">
+                                                                <div class="common-input-list__title-wrap">
+                                                                    <p class="common-input-list__title">영문 이름</p>
+                                                                </div>
+                                                                <div class="common-input-list__field">
+                                                                    <div class="common-input-list__field--inner">
+                                                                        <input type="text" placeholder="영문 이름">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="common-input-list__error">
+                                                    <p class="common-input-list__error--text">
+                                                        형식에 맞지 않아요. 다시 입력해 주세요!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="common-input-list__item">
+                                            <div class="common-input-list__inner">
+                                                <div class="common-input-list__title-wrap">
+                                                    <p class="common-input-list__title">생년월일</p>
+                                                </div>
+                                                <div class="common-list__area">
+                                                    <ul class="common-list__wrap list3 gap19">
+                                                        <li class="common-list__con">
+                                                            <div class="common-list__inner">
+                                                                <div class="common-input-list__field">
+                                                                    <!-- 
+                                                                    select custom 이슈로 인해 input 태그로 대체 하였습니다.
+                                                                    .common-input-list__field--inner 클릭 시 팝업 나오고 팝업에서 값 선택 시 value 조정 해주시면 감사하겠습니다.
+                                                                        -->
+                                                                    <div class="common-input-list__field--inner">
+                                                                        <input type="text" placeholder="년도" readonly>
+                                                                        <p class="common-input-list__icon r16 align-right"><img src="./assets/images/down-arrow-ico-gray-700-8x4.svg" alt="password icon"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="common-list__con">
+                                                            <div class="common-list__inner">
+                                                                <div class="common-input-list__field">
+                                                                    <div class="common-input-list__field--inner">
+                                                                        <input type="text" placeholder="월" readonly>
+                                                                        <p class="common-input-list__icon r16 align-right"><img src="./assets/images/down-arrow-ico-gray-700-8x4.svg" alt="password icon"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="common-list__con">
+                                                            <div class="common-list__inner">
+                                                                <div class="common-input-list__field">
+                                                                    <div class="common-input-list__field--inner">
+                                                                        <input type="text" placeholder="일" readonly>
+                                                                        <p class="common-input-list__icon r16 align-right"><img src="./assets/images/down-arrow-ico-gray-700-8x4.svg" alt="password icon"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="common-input-list__error">
+                                                    <p class="common-input-list__error--text">
+                                                        형식에 맞지 않아요. 다시 입력해 주세요!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="common-bottom-button-list__button-wrap common-button-wrap">
+                            <a href="#;" class="common-button common-button-storke-mint font-size__16">
+                                <p class="ico"><img src="./assets/images/plus-ico-mint-500-24x24.svg" alt="ico"></p>
+                                <p class="text">
+                                    예약자 추가
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="common-line__gray">line</p>
+                    <div class="mvp-reservation-edit__wrap common-box__padding-24-20">
+                        <div class="common-form">
+                            <div class="common-input-list">
+                                <ul class="common-input-list__wrap">
+                                    <!-- 에러 상황 시 error class 추가 -->
+                                    <li class="common-input-list__item">
+                                        <div class="common-input-list__inner">
+                                            <div class="common-input-list__title-wrap">
+                                                <p class="common-input-list__title">이메일 (필수)</p>
+                                            </div>
+                                            <div class="common-input-list__field">
+                                                <div class="common-input-list__field--inner">
+                                                    <input type="text" placeholder="이메일을 입력해 주세요.">
+                                                </div>
+                                            </div>
+                                            <div class="common-input-list__error">
+                                                <p class="common-input-list__error--text">
+                                                    형식에 맞지 않아요. 다시 입력해 주세요!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="common-input-list__item">
+                                        <div class="common-input-list__inner">
+                                            <div class="common-input-list__title-wrap">
+                                                <p class="common-input-list__title">연락처 (필수)</p>
+                                            </div>
+                                            <div class="common-input-list__field margin-bottom__8">
+                                                <div class="common-input-list__field--inner">
+                                                    <input type="text" value="+82 (대한민국)" readonly>
+                                                    <p class="common-input-list__icon r16 align-right"><img src="./assets/images/down-arrow-ico-gray-700-8x4.svg" alt="password icon"></p>
+                                                </div>
+                                            </div>
+                                            <div class="common-input-list__field">
+                                                <div class="common-input-list__field--inner">
+                                                    <input type="text" placeholder="‘-’ 없이 연락처를 입력해 주세요.">
+                                                </div>
+                                            </div>
+                                            <div class="common-input-list__error">
+                                                <p class="common-input-list__error--text">
+                                                    형식에 맞지 않아요. 다시 입력해 주세요!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="common-line__gray">line</p>
+                    <div class="mvp-reservation-edit__wrap common-box__padding-24-20">
+                        <div class="common-form">
+                            <div class="common-form-title__area margin-bottom__12">
+                                <div class="common-form-title__wrap">
+                                    <p class="common-form-title__text font-size__16 font-weight__600">추가 입력 정보</p>
+                                </div>
+                            </div>
+                            <div class="common-input-list">
+                                <ul class="common-input-list__wrap">
+                                    <!-- 에러 상황 시 error class 추가 -->
+                                    <li class="common-input-list__item">
+                                        <div class="common-input-list__inner">
+                                            <div class="common-input-list__title-wrap">
+                                                <p class="common-input-list__title">비상 연락처 (선택)</p>
+                                            </div>
+                                            <div class="common-input-list__field margin-bottom__8">
+                                                <div class="common-input-list__field--inner">
+                                                    <input type="text" value="+82 (대한민국)" readonly>
+                                                    <p class="common-input-list__icon r16 align-right"><img src="./assets/images/down-arrow-ico-gray-700-8x4.svg" alt="password icon"></p>
+                                                </div>
+                                            </div>
+                                            <div class="common-input-list__field">
+                                                <div class="common-input-list__field--inner">
+                                                    <input type="text" placeholder="‘-’ 없이 연락처를 입력해 주세요.">
+                                                </div>
+                                            </div>
+                                            <div class="common-input-list__error">
+                                                <p class="common-input-list__error--text">
+                                                    형식에 맞지 않아요. 다시 입력해 주세요!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="common-input-list__item">
+                                        <div class="common-input-list__inner">
+                                            <div class="common-input-list__title-wrap margin-bottom__12">
+                                                <p class="common-input-list__title">예약자 성별 (호스텔인 경우 선택해 주세요!)</p>
+                                            </div>
+                                            <div class="common-quantity margin-bottom__12">
+                                                <div class="common-quantity__inner">
+                                                    <div class="common-quantity__title-wrap">
+                                                        <p class="common-quantity__title font-size__14 font-weight__400">여성</p>
+                                                    </div>
+                                                    <div class="common-quantity__input-area">
+                                                        <div class="common-quantity__button common-quantity__button--minus">
+                                                            <p class="common-quantity__icon">icon</p>
+                                                        </div>
+                                                        <div class="common-quantity__input-wrap">
+                                                            <input type="text" class="common-quantity__input" value="0">
+                                                        </div>
+                                                        <div class="common-quantity__button common-quantity__button--plus">
+                                                            <p class="common-quantity__icon">icon</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="common-input-list__error">
+                                                    <p class="common-input-list__error--text">
+                                                        형식에 맞지 않아요. 다시 입력해 주세요!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="common-quantity">
+                                                <div class="common-quantity__inner">
+                                                    <div class="common-quantity__title-wrap">
+                                                        <p class="common-quantity__title font-size__14 font-weight__400">남성</p>
+                                                    </div>
+                                                    <div class="common-quantity__input-area">
+                                                        <div class="common-quantity__button common-quantity__button--minus">
+                                                            <p class="common-quantity__icon">icon</p>
+                                                        </div>
+                                                        <div class="common-quantity__input-wrap">
+                                                            <input type="text" class="common-quantity__input" value="0">
+                                                        </div>
+                                                        <div class="common-quantity__button common-quantity__button--plus">
+                                                            <p class="common-quantity__icon">icon</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="common-input-list__error">
+                                                    <p class="common-input-list__error--text">
+                                                        형식에 맞지 않아요. 다시 입력해 주세요!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="common-input-list__item">
+                                        <div class="common-input-list__inner">
+                                            <div class="common-input-list__title-wrap">
+                                                <p class="common-input-list__title">*기타 요청 사항</p>
+                                            </div>
+                                            <div class="common-input-list__field">
+                                                <div class="common-input-list__field--inner">
+                                                    <textarea name="" id="" class="common-textarea h160"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="common-input-list__error">
+                                                <p class="common-input-list__error--text">
+                                                    형식에 맞지 않아요. 다시 입력해 주세요!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="common-line__gray">line</p>
+                    <div class="mvp-reservation-edit__wrap common-box__padding-24-20">
+                        <!-- 하단 + 예약자 추가 버튼 클릭 시 해당 element 추가 -->
+                        <div class="add-section margin-bottom__28">
+                            <div class="common-form">
+                                <div class="common-input-list">
+                                    <ul class="common-input-list__wrap">
+                                        <!-- 
+                                            에러 상황 시 error class 추가
+                                            비활성화 시 disabled class 추가
+                                        -->
+                                        <li class="common-input-list__item">
+                                            <div class="common-input-list__inner">
+                                                <div class="common-input-list__title-wrap">
+                                                    <p class="common-input-list__title">한글 이름</p>
+                                                </div>
+                                                <div class="common-input-list__field">
+                                                    <div class="common-input-list__field--inner">
+                                                        <input type="text" value="최재용">
+                                                    </div>
+                                                </div>
+                                                <div class="common-input-list__error">
+                                                    <p class="common-input-list__error--text">
+                                                        형식에 맞지 않아요. 다시 입력해 주세요!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="common-input-list__item">
+                                            <div class="common-input-list__inner">
+                                                <div class="common-list__area">
+                                                    <ul class="common-list__wrap list2 gap12">
+                                                        <li class="common-list__con">
+                                                            <div class="common-list__inner">
+                                                                <div class="common-input-list__title-wrap">
+                                                                    <p class="common-input-list__title">영문 성</p>
+                                                                </div>
+                                                                <div class="common-input-list__field">
+                                                                    <div class="common-input-list__field--inner">
+                                                                        <input type="text" value="CHOI">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="common-list__con">
+                                                            <div class="common-list__inner">
+                                                                <div class="common-input-list__title-wrap">
+                                                                    <p class="common-input-list__title">영문 이름</p>
+                                                                </div>
+                                                                <div class="common-input-list__field">
+                                                                    <div class="common-input-list__field--inner">
+                                                                        <input type="text" value="JAE YONG">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="common-input-list__error">
+                                                    <p class="common-input-list__error--text">
+                                                        형식에 맞지 않아요. 다시 입력해 주세요!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="common-input-list__item">
+                                            <div class="common-input-list__inner">
+                                                <div class="common-input-list__title-wrap">
+                                                    <p class="common-input-list__title">생년월일</p>
+                                                </div>
+                                                <div class="common-list__area">
+                                                    <ul class="common-list__wrap list3 gap19">
+                                                        <li class="common-list__con">
+                                                            <div class="common-list__inner">
+                                                                <div class="common-input-list__field">
+                                                                    <!-- 
+                                                                    select custom 이슈로 인해 input 태그로 대체 하였습니다.
+                                                                    .common-input-list__field--inner 클릭 시 팝업 나오고 팝업에서 값 선택 시 value 조정 해주시면 감사하겠습니다.
+                                                                        -->
+                                                                    <div class="common-input-list__field--inner">
+                                                                        <input type="text" value="1900년" readonly>
+                                                                        <p class="common-input-list__icon r16 align-right"><img src="./assets/images/down-arrow-ico-gray-700-8x4.svg" alt="password icon"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="common-list__con">
+                                                            <div class="common-list__inner">
+                                                                <div class="common-input-list__field">
+                                                                    <div class="common-input-list__field--inner">
+                                                                        <input type="text" value="1월" readonly>
+                                                                        <p class="common-input-list__icon r16 align-right"><img src="./assets/images/down-arrow-ico-gray-700-8x4.svg" alt="password icon"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                        <li class="common-list__con">
+                                                            <div class="common-list__inner">
+                                                                <div class="common-input-list__field">
+                                                                    <div class="common-input-list__field--inner">
+                                                                        <input type="text" value="1일" readonly>
+                                                                        <p class="common-input-list__icon r16 align-right"><img src="./assets/images/down-arrow-ico-gray-700-8x4.svg" alt="password icon"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="common-input-list__error">
+                                                    <p class="common-input-list__error--text">
+                                                        형식에 맞지 않아요. 다시 입력해 주세요!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="common-input-list__item">
+                                            <div class="common-input-list__inner">
+                                                <div class="common-input-list__title-wrap">
+                                                    <p class="common-input-list__title">여권번호</p>
+                                                </div>
+                                                <div class="common-input-list__field">
+                                                    <div class="common-input-list__field--inner">
+                                                        <input type="text" value="M123456789">
+                                                    </div>
+                                                </div>
+                                                <div class="common-input-list__error">
+                                                    <p class="common-input-list__error--text">
+                                                        형식에 맞지 않아요. 다시 입력해 주세요!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="common-bottom-button-list__button-wrap common-button-wrap">
+                            <a href="#;" class="common-button common-button-storke-mint font-size__16">
+                                <p class="ico"><img src="./assets/images/plus-ico-mint-500-24x24.svg" alt="ico"></p>
+                                <p class="text">
+                                    예약자 추가
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                    <p class="common-line__gray">line</p>
+                    <div class="mvp-reservation-edit__wrap common-box__padding-24-20">
+                        <div class="common-form">
+                            <div class="common-input-list">
+                                <ul class="common-input-list__wrap">
+                                    <!-- 에러 상황 시 error class 추가 -->
+                                    <li class="common-input-list__item">
+                                        <div class="common-input-list__inner">
+                                            <div class="common-input-list__title-wrap">
+                                                <p class="common-input-list__title">이메일 (필수)</p>
+                                            </div>
+                                            <div class="common-input-list__field">
+                                                <div class="common-input-list__field--inner">
+                                                    <input type="text" value="example@example.com">
+                                                </div>
+                                            </div>
+                                            <div class="common-input-list__error">
+                                                <p class="common-input-list__error--text">
+                                                    형식에 맞지 않아요. 다시 입력해 주세요!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="common-input-list__item">
+                                        <div class="common-input-list__inner">
+                                            <div class="common-input-list__title-wrap">
+                                                <p class="common-input-list__title">연락처 (필수)</p>
+                                            </div>
+                                            <div class="common-input-list__field margin-bottom__8">
+                                                <div class="common-input-list__field--inner">
+                                                    <input type="text" value="+82 (대한민국)" readonly>
+                                                    <p class="common-input-list__icon r16 align-right"><img src="./assets/images/down-arrow-ico-gray-700-8x4.svg" alt="password icon"></p>
+                                                </div>
+                                            </div>
+                                            <div class="common-input-list__field">
+                                                <div class="common-input-list__field--inner">
+                                                    <input type="text" value="010-1234-5678">
+                                                </div>
+                                            </div>
+                                            <div class="common-input-list__error">
+                                                <p class="common-input-list__error--text">
+                                                    형식에 맞지 않아요. 다시 입력해 주세요!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="common-line__gray">line</p>
+                    <div class="mvp-reservation-edit__wrap common-box__padding-24-20">
+                        <div class="common-form">
+                            <div class="common-input-list">
+                                <ul class="common-input-list__wrap">
+                                    <!-- 에러 상황 시 error class 추가 -->
+                                    <li class="common-input-list__item">
+                                        <div class="common-input-list__inner">
+                                            <div class="common-input-list__title-wrap">
+                                                <p class="common-input-list__title">*기타 요청 사항</p>
+                                            </div>
+                                            <div class="common-input-list__field">
+                                                <div class="common-input-list__field--inner">
+                                                    <textarea class="common-textarea h160">요청사항 어쩌구 저쩌구</textarea>
+                                                </div>
+                                            </div>
+                                            <div class="common-input-list__error">
+                                                <p class="common-input-list__error--text">
+                                                    형식에 맞지 않아요. 다시 입력해 주세요!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="common-line__gray margin-bottom__24">line</p>
+                <div class="mvp-reservation-edit__wrap common-box__padding-0-20 margin-bottom__32">
+                    <div class="common-form">
+                        <div class="common-form-title__area margin-bottom__12">
+                            <div class="common-form-title__wrap">
+                                <p class="common-form-title__text font-size__20 font-weight__600">차량 서비스 정보</p>
+                            </div>
+                            <div class="common-form-title__desc-wrap">
+                                <p class="common-form-title__desc font-size__12 font-weight__500 c-gray__600">
+                                    *모두 필수 입력 사항 입니다!
+                                </p>
+                            </div>
+                        </div>
+                        <!-- on class 추가 시 아코디언 펼쳐짐 -->
+                        <div class="accordion-area">
+                            <div class="common-label-list">
+                                <ul class="common-label-list__wrap">
+                                    <li class="common-label-list__item">
+                                        <div class="common-label-list__inner">
+                                            <div class="common-label-list__label">
+                                                <input type="checkbox" name="pickupService" id="pickupService">
+                                                <label for="pickupService" class="font-size__14 font-weight__500 c-gray__800">픽업 서비스</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="common-input-list">
+                                <ul class="common-input-list__wrap">
+                                    <!-- 
+                                        에러 상황 시 error class 추가
+                                        비활성화 시 disabled class 추가
+                                    -->
+                                    <li class="common-input-list__item">
+                                        <div class="common-input-list__inner">
+                                            <div class="common-input-list__title-wrap">
+                                                <p class="common-input-list__title">중국 도착 예정 항공편 시간</p>
+                                            </div>
+                                            <div class="common-list__area">
+                                                <ul class="common-list__wrap list3 gap12">
+                                                    <li class="common-list__con">
+                                                        <div class="common-list__inner">
+                                                            <div class="common-input-list__field">
+                                                                <!-- 
+                                                                select custom 이슈로 인해 input 태그로 대체 하였습니다.
+                                                                .common-input-list__field--inner 클릭 시 팝업 나오고 팝업에서 값 선택 시 value 조정 해주시면 감사하겠습니다.
+                                                                    -->
+                                                                <div class="common-input-list__field--inner">
+                                                                    <input type="text" placeholder="시" readonly>
+                                                                    <p class="common-input-list__icon r16 align-right"><img src="./assets/images/down-arrow-ico-gray-700-8x4.svg" alt="password icon"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="common-list__con">
+                                                        <div class="common-list__inner">
+                                                            <div class="common-input-list__field">
+                                                                <div class="common-input-list__field--inner">
+                                                                    <input type="text" placeholder="분" readonly>
+                                                                    <p class="common-input-list__icon r16 align-right"><img src="./assets/images/down-arrow-ico-gray-700-8x4.svg" alt="password icon"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="common-input-list__error">
+                                                <p class="common-input-list__error--text">
+                                                    형식에 맞지 않아요. 다시 입력해 주세요!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="common-input-list__item">
+                                        <div class="common-input-list__inner">
+                                            <div class="common-input-list__title-wrap">
+                                                <p class="common-input-list__title">총 탑승 인원</p>
+                                            </div>
+                                            <div class="common-list__area">
+                                                <ul class="common-list__wrap list3 gap12">
+                                                    <li class="common-list__con">
+                                                        <div class="common-list__inner">
+                                                            <div class="common-input-list__field">
+                                                                <!-- 
+                                                                select custom 이슈로 인해 input 태그로 대체 하였습니다.
+                                                                .common-input-list__field--inner 클릭 시 팝업 나오고 팝업에서 값 선택 시 value 조정 해주시면 감사하겠습니다.
+                                                                    -->
+                                                                <div class="common-input-list__field--inner">
+                                                                    <input type="text" placeholder="인원 수" readonly>
+                                                                    <p class="common-input-list__icon r16 align-right"><img src="./assets/images/down-arrow-ico-gray-700-8x4.svg" alt="password icon"></p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="common-input-list__error">
+                                                <p class="common-input-list__error--text">
+                                                    형식에 맞지 않아요. 다시 입력해 주세요!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <p class="common-line m-20-0">line</p>
+                        <div class="accordion-area">
+                            <div class="common-label-list">
+                                <ul class="common-label-list__wrap">
+                                    <li class="common-label-list__item">
+                                        <div class="common-label-list__inner">
+                                            <div class="common-label-list__label">
+                                                <input type="checkbox" name="sendingService" id="sendingService">
+                                                <label for="sendingService" class="font-size__14 font-weight__500 c-gray__800">샌딩 서비스</label>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="common-input-list">
+                                <ul class="common-input-list__wrap">
+                                    <!-- 
+                                        에러 상황 시 error class 추가
+                                        비활성화 시 disabled class 추가
+                                    -->
+                                    <li class="common-input-list__item disabled">
+                                        <div class="common-input-list__inner">
+                                            <div class="common-input-list__title-wrap">
+                                                <p class="common-input-list__title">항공편</p>
+                                            </div>
+                                            <div class="common-input-list__field">
+                                                <div class="common-input-list__field--inner">
+                                                    <input type="text" placeholder="항공편을 입력해 주세요." readonly>
+                                                </div>
+                                            </div>
+                                            <div class="common-input-list__error">
+                                                <p class="common-input-list__error--text">
+                                                    형식에 맞지 않아요. 다시 입력해 주세요!
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-bottom-button-list common-bottom-button-list-position">
+                    <ul class="common-bottom-button-list__wrap">
+                        <li class="common-bottom-button-list__item">
+                            <div class="common-bottom-button-list__inner">
+                                <div class="common-bottom-button-list__button-wrap common-button-wrap">
+                                    <!-- on class 추가 시 활성화 -->
+                                    <a href="#;" class="common-bottom-button-list__button common-button font-size__16">
+                                        수정 완료
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+        <!-- select box popup -->
+        <!-- style="display: none; 삭제 시 노출 -->
+        <div class="common-bottom-sheet-popup" style="display: none;">
+            <div class="common-bottom-sheet-popup__bg">background</div>
+            <div class="common-bottom-sheet-popup__area">
+                <div class="common-bottom-sheet-popup__wrap">
+                    <div class="select-popup">
+                        <div class="select-popup__ico-area">
+                            <div class="select-popup__ico-wrap">
+                                <p class="select-popup__ico">line</p>
+                            </div>
+                        </div>
+                        <div class="select-popup__list margin-bottom__16">
+                            <div class="select-popup__list-area">
+                                <ul class="select-popup__list-wrap">
+                                    <!-- select class 추가 시 활성화 -->
+                                    <li class="select-popup__list-con select">
+                                        <div class="select-popup__list-inner">
+                                            <button class="select-popup__button">
+                                                <p class="select-popup__button-text">1900년</p>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="select-popup__list-con">
+                                        <div class="select-popup__list-inner">
+                                            <button class="select-popup__button">
+                                                <p class="select-popup__button-text">1900년</p>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="select-popup__list-con">
+                                        <div class="select-popup__list-inner">
+                                            <button class="select-popup__button">
+                                                <p class="select-popup__button-text">1900년</p>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="select-popup__list-con">
+                                        <div class="select-popup__list-inner">
+                                            <button class="select-popup__button">
+                                                <p class="select-popup__button-text">1900년</p>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="select-popup__list-con">
+                                        <div class="select-popup__list-inner">
+                                            <button class="select-popup__button">
+                                                <p class="select-popup__button-text">1900년</p>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="select-popup__list-con">
+                                        <div class="select-popup__list-inner">
+                                            <button class="select-popup__button">
+                                                <p class="select-popup__button-text">1900년</p>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="select-popup__list-con">
+                                        <div class="select-popup__list-inner">
+                                            <button class="select-popup__button">
+                                                <p class="select-popup__button-text">1900년</p>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="common-bottom-button-list__button-wrap common-button-wrap">
+                            <a href="#;" class="common-bottom-button-list__button on common-button font-size__16">
+                                선택
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- style="display: none; 삭제 시 노출 -->
+        <div class="common-bottom-sheet-popup" style="display: none;">
+            <div class="common-bottom-sheet-popup__bg">background</div>
+            <div class="common-bottom-sheet-popup__area">
+                <div class="common-bottom-sheet-popup__wrap">
+                    <div class="select-popup">
+                        <div class="sorting-popup__title-area">
+                            <div class="sorting-popup__title-wrap">
+                                <p class="sorting-popup__title c-gray__900 font-size__18 font-weight__600">연락처</p>
+                            </div>
+                            <div class="sorting-popup__ico-wrap">
+                                <button class="sorting-popup__close-button">
+                                    <p class="sorting-popup__close-icon">
+                                        <img src="./assets/images/close-40x40.svg" alt="close icon">
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="select-popup__list margin-bottom__16">
+                            <div class="select-popup__list-area">
+                                <ul class="select-popup__list-wrap">
+                                    <!-- select class 추가 시 활성화 -->
+                                    <li class="select-popup__list-con select">
+                                        <div class="select-popup__list-inner">
+                                            <button class="select-popup__button">
+                                                <p class="select-popup__button-text">+82 (대한민국)</p>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="select-popup__list-con">
+                                        <div class="select-popup__list-inner">
+                                            <button class="select-popup__button">
+                                                <p class="select-popup__button-text">+82 (대한민국)</p>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="select-popup__list-con">
+                                        <div class="select-popup__list-inner">
+                                            <button class="select-popup__button">
+                                                <p class="select-popup__button-text">+82 (대한민국)</p>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="select-popup__list-con">
+                                        <div class="select-popup__list-inner">
+                                            <button class="select-popup__button">
+                                                <p class="select-popup__button-text">+82 (대한민국)</p>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="select-popup__list-con">
+                                        <div class="select-popup__list-inner">
+                                            <button class="select-popup__button">
+                                                <p class="select-popup__button-text">+82 (대한민국)</p>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="select-popup__list-con">
+                                        <div class="select-popup__list-inner">
+                                            <button class="select-popup__button">
+                                                <p class="select-popup__button-text">+82 (대한민국)</p>
+                                            </button>
+                                        </div>
+                                    </li>
+                                    <li class="select-popup__list-con">
+                                        <div class="select-popup__list-inner">
+                                            <button class="select-popup__button">
+                                                <p class="select-popup__button-text">+82 (대한민국)</p>
+                                            </button>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="common-bottom-button-list__button-wrap common-button-wrap">
+                            <a href="#;" class="common-bottom-button-list__button on common-button font-size__16">
+                                선택
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 모달 팝업 -->
+        <!-- <div class="common-modal">
+            <div class="common-modal__bg">background</div>
+            <div class="common-modal__area">
+                <div class="common-modal__wrap">
+                    <div class="common-modal__inner">
+                        <div class="common-modal__body">
+                            <div class="common-modal__text-area">
+                                <div class="common-modal__icon-wrap">
+                                    <p class="common-modal__icon"><img src="./assets/images/modal-warning-ico-40x40.svg" alt="icon"></p>
+                                </div>
+                                <div class="common-modal__text-wrap">
+                                    <p class="common-modal__title c-gray__900 font-size__16 font-weight__700 margin-bottom__4">
+                                        다음에 입력하시겠어요?
+                                    </p>
+                                    <p class="common-modal__text">
+                                        추가 예약 정보를 입력해 주셔야<br>
+                                        예약이 완료돼요!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="common-modal__confirm-button-area">
+                            <div class="common-modal__confirm-button-wrap">
+                                <a href="#;" class="common-modal__confirm-button common-modal__button--cancel bgc-gray__300">
+                                    <p class="common-modal__confirm-button-text c-gray__600 font-size__14 font-weight__400">취소하기</p>
+                                </a>
+                            </div>
+                            <div class="common-modal__confirm-button-wrap">
+                                <a href="#;" class="common-modal__confirm-button common-modal__button--confirm bgc-red__100">
+                                    <p class="common-modal__confirm-button-text c-red__500 font-size__14 font-weight__600">다음에 하기</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</body>
+</html>
