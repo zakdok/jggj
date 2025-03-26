@@ -1418,13 +1418,16 @@ input:focus-visible{
         max-width: 345px;
         z-index: 20;
         background-color: #fff;
+        padding-bottom: 0;
     }
-    #header,
-    .bottom-fixed-nav,
+    .bottom-fixed-nav{
+        display: none;
+    }
     #sidebar{
         position: absolute;
     }
     /* popup */
+    #header,
     .common-modal,
     .privacy-modal-popup,
     .common-bottom-sheet-popup,
