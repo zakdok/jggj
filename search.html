@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>중국가자</title>
+    <!-- 외부 플러그인 및 폰트 CSS -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- // 외부 플러그인 및 폰트 CSS -->
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <!-- // 공통 css -->
+    <!-- 서브 페이지 css -->
+    <link rel="stylesheet" href="./assets/css/sub.css">
+    <!-- // 서브 페이지 css -->
+</head>
+<body>
+    <!-- 1440 bg -->
+    <div id="bg1440"></div>
+    <script>
+    // bg1440.html 파일을 불러와서 삽입
+    fetch("bg1440.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("bg1440").innerHTML = data)
+        .catch(error => console.error("백그라운드 로드 실패:", error));
+    </script>
+    <!-- // 1440 bg -->
+     
+    <div id="wrapper">
+        <article id="contents">
+            <section class="search" id="search">
+                <div class="search__header">
+                    <div class="search__left">
+                        <button class="search__button">
+                            <p class="search__icon">
+                                <img src="./assets/images/history-back-ico-gray-900-40x40.svg" alt="icon">
+                            </p>
+                        </button>
+                    </div>
+                    <div class="search__form">
+                        <div class="search__input-wrap">
+                            <input type="search" placeholder="검색어를 입력하세요." class="search__input font-size__16 font-weight__400">
+                        </div>
+                    </div>
+                    <div class="search__right">
+                        <button class="search__button">
+                            <p class="search__icon">
+                                <img src="./assets/images/search-40x40.svg" alt="icon">
+                            </p>
+                        </button>
+                    </div>
+                </div>
+                <!-- 기본 UI -->
+                <div class="search-default__body">
+                    <div class="search__recent-area">
+                        <div class="search__top-title-area">
+                            <div class="search__title-wrap">
+                                <p class="search__title font-size__16 font-weight__600">최근 검색어</p>
+                            </div>
+                            <div class="search__button-wrap">
+                                <button class="search__button">
+                                    <p class="search__button-text font-size__12 font-weight__500 c-gray__500">전체삭제</p>
+                                </button>
+                            </div>
+                        </div>
+            
+                        <div class="search__empty">
+                            <p class="search__empty-text font-size__16 font-weight__500 c-gray__500">최근 검색어가 없습니다.</p>
+                        </div>
+            
+                        <div class="search__recent-slide">
+                            <div class="search__recent-slide-area swiper">
+                                <div class="search__recent-slide-wrap swiper-wrapper">
+                                    <div class="search__recent-slide-con swiper-slide">
+                                        <div class="search__recent-slide-inner">
+                                            <a href="#;" class="search__recent-slide-button">
+                                                <div class="search__recent-slide-title-wrap">
+                                                    <p class="search__recent-slide-title font-size__14 font-weight__500 c-gray__800">상하이 메이트 투어</p>
+                                                </div>
+                                                <p class="search__recent-slide-icon">
+                                                    <img src="./assets/images/search-delete-ico-36x36.svg" alt="icon">
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="search__recent-slide-con swiper-slide">
+                                        <div class="search__recent-slide-inner">
+                                            <a href="#;" class="search__recent-slide-button">
+                                                <div class="search__recent-slide-title-wrap">
+                                                    <p class="search__recent-slide-title font-size__14 font-weight__500 c-gray__800">상하이 메이트 투어</p>
+                                                </div>
+                                                <p class="search__recent-slide-icon">
+                                                    <img src="./assets/images/search-delete-ico-36x36.svg" alt="icon">
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="search__recent-slide-con swiper-slide">
+                                        <div class="search__recent-slide-inner">
+                                            <a href="#;" class="search__recent-slide-button">
+                                                <div class="search__recent-slide-title-wrap">
+                                                    <p class="search__recent-slide-title font-size__14 font-weight__500 c-gray__800">상하이 메이트 투어</p>
+                                                </div>
+                                                <p class="search__recent-slide-icon">
+                                                    <img src="./assets/images/search-delete-ico-36x36.svg" alt="icon">
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="search__recent-slide-con swiper-slide">
+                                        <div class="search__recent-slide-inner">
+                                            <a href="#;" class="search__recent-slide-button">
+                                                <div class="search__recent-slide-title-wrap">
+                                                    <p class="search__recent-slide-title font-size__14 font-weight__500 c-gray__800">상하이 메이트 투어</p>
+                                                </div>
+                                                <p class="search__recent-slide-icon">
+                                                    <img src="./assets/images/search-delete-ico-36x36.svg" alt="icon">
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="search__recent-slide-con swiper-slide">
+                                        <div class="search__recent-slide-inner">
+                                            <a href="#;" class="search__recent-slide-button">
+                                                <div class="search__recent-slide-title-wrap">
+                                                    <p class="search__recent-slide-title font-size__14 font-weight__500 c-gray__800">상하이 메이트 투어</p>
+                                                </div>
+                                                <p class="search__recent-slide-icon">
+                                                    <img src="./assets/images/search-delete-ico-36x36.svg" alt="icon">
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <script>
+                            var navIconSlide = new Swiper(".search__recent-slide-area", {
+                                slidesPerView: "auto",
+                                spaceBetween: 12,
+                            });
+                            </script>
+                        </div>
+                    </div>
+                    <p class="common-line__gray">line</p>
+                    <div class="search-popular">
+                        <div class="search-popular__top-title-area margin-bottom__8">
+                            <div class="search-popular__title-wrap">
+                                <p class="search-popular__title font-size__16 font-weight__600">인기 검색어</p>
+                            </div>
+                        </div>
+                        <div class="search-popular__list-area">
+                            <ul class="search-popular__list-wrap">
+                                <li class="search-popular__list-con">
+                                    <div class="search-popular__list-inner">
+                                        <a href="#;" class="search-popular__button">
+                                            <p class="search-popular__rank">1</p>
+                                            <p class="search-popular__text">상하이</p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="search-popular__list-con">
+                                    <div class="search-popular__list-inner">
+                                        <a href="#;" class="search-popular__button">
+                                            <p class="search-popular__rank">2</p>
+                                            <p class="search-popular__text">하얼빈 설국열차 투어</p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="search-popular__list-con">
+                                    <div class="search-popular__list-inner">
+                                        <a href="#;" class="search-popular__button">
+                                            <p class="search-popular__rank">3</p>
+                                            <p class="search-popular__text">한달살기 프로젝트</p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="search-popular__list-con">
+                                    <div class="search-popular__list-inner">
+                                        <a href="#;" class="search-popular__button">
+                                            <p class="search-popular__rank">4</p>
+                                            <p class="search-popular__text">서안 병마용</p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="search-popular__list-con">
+                                    <div class="search-popular__list-inner">
+                                        <a href="#;" class="search-popular__button">
+                                            <p class="search-popular__rank">5</p>
+                                            <p class="search-popular__text">북경 베이징</p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="search-popular__list-con">
+                                    <div class="search-popular__list-inner">
+                                        <a href="#;" class="search-popular__button">
+                                            <p class="search-popular__rank">6</p>
+                                            <p class="search-popular__text">푸바오 여행</p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="search-popular__list-con">
+                                    <div class="search-popular__list-inner">
+                                        <a href="#;" class="search-popular__button">
+                                            <p class="search-popular__rank">7</p>
+                                            <p class="search-popular__text">만리장성</p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="search-popular__list-con">
+                                    <div class="search-popular__list-inner">
+                                        <a href="#;" class="search-popular__button">
+                                            <p class="search-popular__rank">8</p>
+                                            <p class="search-popular__text">칭다오 맥주 박물관</p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="search-popular__list-con">
+                                    <div class="search-popular__list-inner">
+                                        <a href="#;" class="search-popular__button">
+                                            <p class="search-popular__rank">9</p>
+                                            <p class="search-popular__text">상해 오후 수향마을 판롱티엔디 투어</p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="search-popular__list-con">
+                                    <div class="search-popular__list-inner">
+                                        <a href="#;" class="search-popular__button">
+                                            <p class="search-popular__rank">10</p>
+                                            <p class="search-popular__text">충칭 투어</p>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <article class="nav-icon-slider nav-icon-slider2 common-box__padding-24-20">
+                        <div class="common-item__title-area">
+                            <div class="common-item__text-area">
+                                <div class="common-item__title-wrap">
+                                    <p class="common-item__title font-size__16 font-weight__600 c-gray__900">여길 찾으시나요? 인기 지역 TOP 5</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-icon-slider__swiper swiper">
+                            <div class="nav-icon-slider__wrapper swiper-wrapper">
+                                <div class="nav-icon-slider__slide swiper-slide">
+                                    <div class="nav-icon-slider__slide-inner">
+                                        <a href="#;" class="nav-icon-slider__button">
+                                            <p class="nav-icon-slider__icon"><img src="./assets/images/main-popular11.svg" alt="icon"></p>
+                                            <div class="nav-icon-slider__title-wrap">
+                                                <p class="nav-icon-slider__title font-weight__500">
+                                                    상해
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="nav-icon-slider__slide swiper-slide">
+                                    <div class="nav-icon-slider__slide-inner">
+                                        <a href="#;" class="nav-icon-slider__button">
+                                            <p class="nav-icon-slider__icon"><img src="./assets/images/main-popular12.svg" alt="icon"></p>
+                                            <div class="nav-icon-slider__title-wrap">
+                                                <p class="nav-icon-slider__title font-weight__500">
+                                                    하얼빈
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="nav-icon-slider__slide swiper-slide">
+                                    <div class="nav-icon-slider__slide-inner">
+                                        <a href="#;" class="nav-icon-slider__button">
+                                            <p class="nav-icon-slider__icon"><img src="./assets/images/main-popular13.svg" alt="icon"></p>
+                                            <div class="nav-icon-slider__title-wrap">
+                                                <p class="nav-icon-slider__title font-weight__500">
+                                                    칭다오
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="nav-icon-slider__slide swiper-slide">
+                                    <div class="nav-icon-slider__slide-inner">
+                                        <a href="#;" class="nav-icon-slider__button">
+                                            <p class="nav-icon-slider__icon"><img src="./assets/images/main-popular14.svg" alt="icon"></p>
+                                            <div class="nav-icon-slider__title-wrap">
+                                                <p class="nav-icon-slider__title font-weight__500">
+                                                    서안
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="nav-icon-slider__slide swiper-slide">
+                                    <div class="nav-icon-slider__slide-inner">
+                                        <a href="#;" class="nav-icon-slider__button">
+                                            <p class="nav-icon-slider__icon"><img src="./assets/images/main-popular15.svg" alt="icon"></p>
+                                            <div class="nav-icon-slider__title-wrap">
+                                                <p class="nav-icon-slider__title font-weight__500">
+                                                    베이징
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="nav-icon-slider__slide swiper-slide">
+                                    <div class="nav-icon-slider__slide-inner">
+                                        <a href="#;" class="nav-icon-slider__button">
+                                            <p class="nav-icon-slider__icon"><img src="./assets/images/main-popular-more.svg" alt="icon"></p>
+                                            <div class="nav-icon-slider__title-wrap">
+                                                <p class="nav-icon-slider__title font-weight__500">
+                                                    더보기
+                                                </p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <script>
+                    var navIconSlide = new Swiper(".nav-icon-slider2 .swiper", {
+                        slidesPerView: "auto",
+                        spaceBetween: 16,
+                    });
+                    </script>
+                </div>
+                <!-- 검색어 입력 시 UI -->
+                <!-- <div class="search-autocomplete">
+                    <div class="search-autocomplete__area">
+                        <div class="search-autocomplete__list-area">
+                            <ul class="search-autocomplete__list-wrap">
+                                <li class="search-autocomplete__list-con">
+                                    <div class="search-autocomplete__list-inner">
+                                        <a href="#;" class="search-autocomplete__button">
+                                            <p class="search-autocomplete__icon">
+                                                <img src="./assets/images/autocomplete-ico-china.svg" alt="icon">
+                                            </p>
+                                            <p class="search-autocomplete__text font-size__14 font-weight__600 c-gray__800">
+                                                <strong class="c-mint__500 font-weight__600">상하이</strong>·상해
+                                            </p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="search-autocomplete__list-con">
+                                    <div class="search-autocomplete__list-inner">
+                                        <a href="#;" class="search-autocomplete__button">
+                                            <p class="search-autocomplete__icon">
+                                                <img src="./assets/images/autocomplete-ico-hotel.svg" alt="icon">
+                                            </p>
+                                            <p class="search-autocomplete__text font-size__14 font-weight__600 c-gray__800">
+                                                [<strong class="c-mint__500 font-weight__600">상하이</strong>여행] 숙소/숙박/한달살기 상품 
+                                            </p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="search-autocomplete__list-con">
+                                    <div class="search-autocomplete__list-inner">
+                                        <a href="#;" class="search-autocomplete__button">
+                                            <p class="search-autocomplete__icon">
+                                                <img src="./assets/images/autocomplete-ico-location_on.svg" alt="icon">
+                                            </p>
+                                            <p class="search-autocomplete__text font-size__14 font-weight__600 c-gray__800">
+                                                <strong class="c-mint__500 font-weight__600">상하이</strong> 관광지/명소
+                                            </p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="search-autocomplete__list-con">
+                                    <div class="search-autocomplete__list-inner">
+                                        <a href="#;" class="search-autocomplete__button">
+                                            <p class="search-autocomplete__icon">
+                                                <img src="./assets/images/autocomplete-ico-confirmation_number.svg" alt="icon">
+                                            </p>
+                                            <p class="search-autocomplete__text font-size__14 font-weight__600 c-gray__800">
+                                                <strong class="c-mint__500 font-weight__600">상하이</strong> 입장권 상품
+                                            </p>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="search-autocomplete__list-con">
+                                    <div class="search-autocomplete__list-inner">
+                                        <a href="#;" class="search-autocomplete__button">
+                                            <p class="search-autocomplete__icon">
+                                                <img src="./assets/images/autocomplete-ico-luggage.svg" alt="icon">
+                                            </p>
+                                            <p class="search-autocomplete__text font-size__14 font-weight__600 c-gray__800">
+                                                <strong class="c-mint__500 font-weight__600">상하이</strong> 투어 상품
+                                            </p>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- 검색 결과 없을 경우 UI -->
+                <!-- <div class="search-empty">
+                    <div class="search-empty__area">
+                        <div class="search-empty__img-wrap margin-bottom__24">
+                            <p class="search-empty__img">
+                                <img src="./assets/images/search-empty.svg" alt="image">
+                            </p>
+                        </div>
+                        <div class="search-empty__text-wrap">
+                            <p class="search-empty__title margin-bottom__16 font-size__20 font-weight__700">
+                                흠...<br>
+                                검색 결과가 없어요.
+                            </p>
+                            <p class="search-empty__text font-size__14 font-weight__400 c-gray__700">
+                                검색어를 다르게 입력해 보세요!
+                            </p>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- 검색 결과 있을 경우 UI -->
+                <!-- <div class="search-result">
+                    <div class="search-result__area">
+                        <div class="search-result__top-text-area">
+                            <div class="search-result__text-wrap">
+                                <p class="search-result__text font-size__16 font-weight__400 c-gray__800">
+                                    <strong class="search-result__keyword font-weight__600 c-mint__500">‘검색어’</strong> 총 <strong class="search-result__count font-weight__600 c-gray__900">100개</strong>의 상품을 찾았습니다!
+                                </p>
+                            </div>
+                        </div>
+                        <section class="more-items common-box__padding-24-20">
+                            <div class="more-items__filter-title-area margin-bottom__16">
+                                <div class="more-items__title-wrap">
+                                    <p class="more-items__title c-gray__800 font-size__12 font-weight__500">
+                                        총 <strong class="c-gray__900">100</strong> 개의 상품
+                                    </p>
+                                </div>
+                                <div class="more-items__option-button">
+                                    <button class="more-items__button">
+                                        <p class="more-items__button-text c-gray__800 font-size__12 font-weight__400">신상품순</p>
+                                        <p class="more-items__button-icon">
+                                            <img src="./assets/images/sorting-arrow-20x20.svg" alt="arrow">
+                                        </p>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="more-items__list-area">
+                                <ul class="more-items__list-wrap">
+                                    <li class="more-items__list-con">
+                                        <div class="more-items__list-inner">
+                                            <div class="more-items__item-box">
+                                                <div class="more-items__thumb-area">
+                                                    <div class="more-items__thumb-wrap">
+                                                        <a href="#;">
+                                                            <p class="more-items__thumb">
+                                                                <img src="./assets/images/main-row13.png" alt="thumbnail">
+                                                            </p>
+                                                        </a>
+                                                        <button class="item__heart"><img src="./assets/images/heart-icon-36x36.svg" alt="icon"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="more-items__info">
+                                                    <div class="more-items__info-wrap">
+                                                        <p class="more-items__category">입장권 · 패스권</p>
+                                                        <a href="#;">
+                                                            <p class="more-items__subject">
+                                                                [상하이·상해] 중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="more-items__price-wrap">
+                                                        <p class="more-items__old-price">24,000원</p>
+                                                        <p class="more-items__price">17,000원</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="more-items__list-con">
+                                        <div class="more-items__list-inner">
+                                            <div class="more-items__item-box">
+                                                <div class="more-items__thumb-area">
+                                                    <div class="more-items__thumb-wrap">
+                                                        <a href="#;">
+                                                            <p class="more-items__thumb">
+                                                                <img src="./assets/images/main-row13.png" alt="thumbnail">
+                                                            </p>
+                                                        </a>
+                                                        <button class="item__heart"><img src="./assets/images/heart-icon-36x36.svg" alt="icon"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="more-items__info">
+                                                    <div class="more-items__info-wrap">
+                                                        <p class="more-items__category">입장권 · 패스권</p>
+                                                        <a href="#;">
+                                                            <p class="more-items__subject">
+                                                                [상하이·상해] 중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="more-items__price-wrap">
+                                                        <p class="more-items__old-price">24,000원</p>
+                                                        <p class="more-items__price">17,000원</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="more-items__list-con">
+                                        <div class="more-items__list-inner">
+                                            <div class="more-items__item-box">
+                                                <div class="more-items__thumb-area">
+                                                    <div class="more-items__thumb-wrap">
+                                                        <a href="#;">
+                                                            <p class="more-items__thumb">
+                                                                <img src="./assets/images/main-row13.png" alt="thumbnail">
+                                                            </p>
+                                                        </a>
+                                                        <button class="item__heart"><img src="./assets/images/heart-icon-36x36.svg" alt="icon"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="more-items__info">
+                                                    <div class="more-items__info-wrap">
+                                                        <p class="more-items__category">입장권 · 패스권</p>
+                                                        <a href="#;">
+                                                            <p class="more-items__subject">
+                                                                [상하이·상해] 중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="more-items__price-wrap">
+                                                        <p class="more-items__old-price">24,000원</p>
+                                                        <p class="more-items__price">17,000원</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="more-items__list-con">
+                                        <div class="more-items__list-inner">
+                                            <div class="more-items__item-box">
+                                                <div class="more-items__thumb-area">
+                                                    <div class="more-items__thumb-wrap">
+                                                        <a href="#;">
+                                                            <p class="more-items__thumb">
+                                                                <img src="./assets/images/main-row13.png" alt="thumbnail">
+                                                            </p>
+                                                        </a>
+                                                        <button class="item__heart"><img src="./assets/images/heart-icon-36x36.svg" alt="icon"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="more-items__info">
+                                                    <div class="more-items__info-wrap">
+                                                        <p class="more-items__category">입장권 · 패스권</p>
+                                                        <a href="#;">
+                                                            <p class="more-items__subject">
+                                                                [상하이·상해] 중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="more-items__price-wrap">
+                                                        <p class="more-items__old-price">24,000원</p>
+                                                        <p class="more-items__price">17,000원</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="more-items__list-con">
+                                        <div class="more-items__list-inner">
+                                            <div class="more-items__item-box">
+                                                <div class="more-items__thumb-area">
+                                                    <div class="more-items__thumb-wrap">
+                                                        <a href="#;">
+                                                            <p class="more-items__thumb">
+                                                                <img src="./assets/images/main-row13.png" alt="thumbnail">
+                                                            </p>
+                                                        </a>
+                                                        <button class="item__heart"><img src="./assets/images/heart-icon-36x36.svg" alt="icon"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="more-items__info">
+                                                    <div class="more-items__info-wrap">
+                                                        <p class="more-items__category">입장권 · 패스권</p>
+                                                        <a href="#;">
+                                                            <p class="more-items__subject">
+                                                                [상하이·상해] 중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="more-items__price-wrap">
+                                                        <p class="more-items__old-price">24,000원</p>
+                                                        <p class="more-items__price">17,000원</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="more-items__list-con">
+                                        <div class="more-items__list-inner">
+                                            <div class="more-items__item-box">
+                                                <div class="more-items__thumb-area">
+                                                    <div class="more-items__thumb-wrap">
+                                                        <a href="#;">
+                                                            <p class="more-items__thumb">
+                                                                <img src="./assets/images/main-row13.png" alt="thumbnail">
+                                                            </p>
+                                                        </a>
+                                                        <button class="item__heart"><img src="./assets/images/heart-icon-36x36.svg" alt="icon"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="more-items__info">
+                                                    <div class="more-items__info-wrap">
+                                                        <p class="more-items__category">입장권 · 패스권</p>
+                                                        <a href="#;">
+                                                            <p class="more-items__subject">
+                                                                [상하이·상해] 중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="more-items__price-wrap">
+                                                        <p class="more-items__old-price">24,000원</p>
+                                                        <p class="more-items__price">17,000원</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="more-items__list-con">
+                                        <div class="more-items__list-inner">
+                                            <div class="more-items__item-box">
+                                                <div class="more-items__thumb-area">
+                                                    <div class="more-items__thumb-wrap">
+                                                        <a href="#;">
+                                                            <p class="more-items__thumb">
+                                                                <img src="./assets/images/main-row13.png" alt="thumbnail">
+                                                            </p>
+                                                        </a>
+                                                        <button class="item__heart"><img src="./assets/images/heart-icon-36x36.svg" alt="icon"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="more-items__info">
+                                                    <div class="more-items__info-wrap">
+                                                        <p class="more-items__category">입장권 · 패스권</p>
+                                                        <a href="#;">
+                                                            <p class="more-items__subject">
+                                                                [상하이·상해] 중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="more-items__price-wrap">
+                                                        <p class="more-items__old-price">24,000원</p>
+                                                        <p class="more-items__price">17,000원</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="more-items__list-con">
+                                        <div class="more-items__list-inner">
+                                            <div class="more-items__item-box">
+                                                <div class="more-items__thumb-area">
+                                                    <div class="more-items__thumb-wrap">
+                                                        <a href="#;">
+                                                            <p class="more-items__thumb">
+                                                                <img src="./assets/images/main-row13.png" alt="thumbnail">
+                                                            </p>
+                                                        </a>
+                                                        <button class="item__heart"><img src="./assets/images/heart-icon-36x36.svg" alt="icon"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="more-items__info">
+                                                    <div class="more-items__info-wrap">
+                                                        <p class="more-items__category">입장권 · 패스권</p>
+                                                        <a href="#;">
+                                                            <p class="more-items__subject">
+                                                                [상하이·상해] 중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="more-items__price-wrap">
+                                                        <p class="more-items__old-price">24,000원</p>
+                                                        <p class="more-items__price">17,000원</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="more-items__list-con">
+                                        <div class="more-items__list-inner">
+                                            <div class="more-items__item-box">
+                                                <div class="more-items__thumb-area">
+                                                    <div class="more-items__thumb-wrap">
+                                                        <a href="#;">
+                                                            <p class="more-items__thumb">
+                                                                <img src="./assets/images/main-row13.png" alt="thumbnail">
+                                                            </p>
+                                                        </a>
+                                                        <button class="item__heart"><img src="./assets/images/heart-icon-36x36.svg" alt="icon"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="more-items__info">
+                                                    <div class="more-items__info-wrap">
+                                                        <p class="more-items__category">입장권 · 패스권</p>
+                                                        <a href="#;">
+                                                            <p class="more-items__subject">
+                                                                [상하이·상해] 중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="more-items__price-wrap">
+                                                        <p class="more-items__old-price">24,000원</p>
+                                                        <p class="more-items__price">17,000원</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="more-items__list-con">
+                                        <div class="more-items__list-inner">
+                                            <div class="more-items__item-box">
+                                                <div class="more-items__thumb-area">
+                                                    <div class="more-items__thumb-wrap">
+                                                        <a href="#;">
+                                                            <p class="more-items__thumb">
+                                                                <img src="./assets/images/main-row13.png" alt="thumbnail">
+                                                            </p>
+                                                        </a>
+                                                        <button class="item__heart"><img src="./assets/images/heart-icon-36x36.svg" alt="icon"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="more-items__info">
+                                                    <div class="more-items__info-wrap">
+                                                        <p class="more-items__category">입장권 · 패스권</p>
+                                                        <a href="#;">
+                                                            <p class="more-items__subject">
+                                                                [상하이·상해] 중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="more-items__price-wrap">
+                                                        <p class="more-items__old-price">24,000원</p>
+                                                        <p class="more-items__price">17,000원</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="more-items__list-con">
+                                        <div class="more-items__list-inner">
+                                            <div class="more-items__item-box">
+                                                <div class="more-items__thumb-area">
+                                                    <div class="more-items__thumb-wrap">
+                                                        <a href="#;">
+                                                            <p class="more-items__thumb">
+                                                                <img src="./assets/images/main-row13.png" alt="thumbnail">
+                                                            </p>
+                                                        </a>
+                                                        <button class="item__heart"><img src="./assets/images/heart-icon-36x36.svg" alt="icon"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="more-items__info">
+                                                    <div class="more-items__info-wrap">
+                                                        <p class="more-items__category">입장권 · 패스권</p>
+                                                        <a href="#;">
+                                                            <p class="more-items__subject">
+                                                                [상하이·상해] 중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="more-items__price-wrap">
+                                                        <p class="more-items__old-price">24,000원</p>
+                                                        <p class="more-items__price">17,000원</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="more-items__list-con">
+                                        <div class="more-items__list-inner">
+                                            <div class="more-items__item-box">
+                                                <div class="more-items__thumb-area">
+                                                    <div class="more-items__thumb-wrap">
+                                                        <a href="#;">
+                                                            <p class="more-items__thumb">
+                                                                <img src="./assets/images/main-row13.png" alt="thumbnail">
+                                                            </p>
+                                                        </a>
+                                                        <button class="item__heart"><img src="./assets/images/heart-icon-36x36.svg" alt="icon"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="more-items__info">
+                                                    <div class="more-items__info-wrap">
+                                                        <p class="more-items__category">입장권 · 패스권</p>
+                                                        <a href="#;">
+                                                            <p class="more-items__subject">
+                                                                [상하이·상해] 중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="more-items__price-wrap">
+                                                        <p class="more-items__old-price">24,000원</p>
+                                                        <p class="more-items__price">17,000원</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="more-items__list-con">
+                                        <div class="more-items__list-inner">
+                                            <div class="more-items__item-box">
+                                                <div class="more-items__thumb-area">
+                                                    <div class="more-items__thumb-wrap">
+                                                        <a href="#;">
+                                                            <p class="more-items__thumb">
+                                                                <img src="./assets/images/main-row13.png" alt="thumbnail">
+                                                            </p>
+                                                        </a>
+                                                        <button class="item__heart"><img src="./assets/images/heart-icon-36x36.svg" alt="icon"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="more-items__info">
+                                                    <div class="more-items__info-wrap">
+                                                        <p class="more-items__category">입장권 · 패스권</p>
+                                                        <a href="#;">
+                                                            <p class="more-items__subject">
+                                                                [상하이·상해] 중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="more-items__price-wrap">
+                                                        <p class="more-items__old-price">24,000원</p>
+                                                        <p class="more-items__price">17,000원</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="more-items__list-con">
+                                        <div class="more-items__list-inner">
+                                            <div class="more-items__item-box">
+                                                <div class="more-items__thumb-area">
+                                                    <div class="more-items__thumb-wrap">
+                                                        <a href="#;">
+                                                            <p class="more-items__thumb">
+                                                                <img src="./assets/images/main-row13.png" alt="thumbnail">
+                                                            </p>
+                                                        </a>
+                                                        <button class="item__heart"><img src="./assets/images/heart-icon-36x36.svg" alt="icon"></button>
+                                                    </div>
+                                                </div>
+                                                <div class="more-items__info">
+                                                    <div class="more-items__info-wrap">
+                                                        <p class="more-items__category">입장권 · 패스권</p>
+                                                        <a href="#;">
+                                                            <p class="more-items__subject">
+                                                                [상하이·상해] 중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약중국 여행 디즈니랜드 입장권 예약
+                                                            </p>
+                                                        </a>
+                                                    </div>
+                                                    <div class="more-items__price-wrap">
+                                                        <p class="more-items__old-price">24,000원</p>
+                                                        <p class="more-items__price">17,000원</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                    </div>
+                </div>                 -->
+            </section>
+        </article>
+        <!-- sorting popup -->
+        <!-- <div class="common-bottom-sheet-popup">
+            <div class="common-bottom-sheet-popup__bg">background</div>
+            <div class="common-bottom-sheet-popup__area">
+                <div class="common-bottom-sheet-popup__wrap">
+                    <div class="sorting-popup">
+                        <div class="sorting-popup__title-area">
+                            <div class="sorting-popup__title-wrap">
+                                <p class="sorting-popup__title c-gray__900 font-size__18 font-weight__600">정렬</p>
+                            </div>
+                            <div class="sorting-popup__ico-wrap">
+                                <button class="sorting-popup__close-button">
+                                    <p class="sorting-popup__close-icon">
+                                        <img src="./assets/images/close-40x40.svg" alt="close icon">
+                                    </p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="sorting-popup__radio-list-area">
+                            <ul class="sorting-popup__list-wrap">
+                                <li class="sorting-popup__list-con">
+                                    <div class="sorting-popup__list-inner">
+                                        <input type="radio" name="sorting" id="sorting-new" checked>
+                                        <label for="sorting-new">
+                                            <p class="sorting-popup__text font-size__16 font-weight__400">신상품순</p>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="sorting-popup__list-con">
+                                    <div class="sorting-popup__list-inner">
+                                        <input type="radio" name="sorting" id="sorting-low">
+                                        <label for="sorting-low">
+                                            <p class="sorting-popup__text font-size__16 font-weight__400">낮은 가격순</p>
+                                        </label>
+                                    </div>
+                                </li>
+                                <li class="sorting-popup__list-con">
+                                    <div class="sorting-popup__list-inner">
+                                        <input type="radio" name="sorting" id="sorting-high">
+                                        <label for="sorting-high">
+                                            <p class="sorting-popup__text font-size__16 font-weight__400">높은 가격순</p>
+                                        </label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</body>
+</html>
