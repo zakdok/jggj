@@ -69,6 +69,18 @@
     justify-content: flex-end;
 }
 #header .header__area--style-title .header__menu-button img{}
+.header-transparent #header{
+    background-color: transparent;
+}
+.header-transparent #wrapper{
+    padding-top: 0;
+}
+.header-transparent #header .header__area--style-title .header__title-wrap .title{
+    color: #fff !important;
+}
+.header-transparent #header .header__area--style-title .header__menu-button img{
+    filter: brightness(0) invert(1);
+}
 
 /* sidebar */
 #sidebar{
