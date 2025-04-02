@@ -1724,6 +1724,7 @@ input:focus-visible{
 .more-items__thumb{}
 .more-items__thumb img{
     width: 100%;
+    border-radius: 8px;
 }
 .more-items__heart{}
 .more-items__info{
