@@ -9,8 +9,20 @@
     position: relative;
 }
 .mv__slide-bg{
+    position: relative;
     height: 0;
     padding-bottom: 90.25%;
+}
+#mv .mv__slide-bg::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+    background: linear-gradient(309.17deg, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.48) 100%);
 }
 .mv__slide-bg img{
     position: absolute;
@@ -19,6 +31,7 @@
     display: block;
     width: 100%;
     height: 100%;
+    z-index: 10;
     object-fit: cover;
 }
 .mv__text-area{
@@ -28,6 +41,7 @@
     width: 100%;
     padding: 30px 25px;
     color: #fff;
+    z-index: 30;
 }
 .mv__title-wrap{}
 .mv__title{
