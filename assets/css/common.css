@@ -30,6 +30,12 @@
 #header .header__area .header__wrap .header__menu .header__menu-button-wrap{}
 #header .header__area .header__wrap .header__menu .header__menu-button-wrap .header__menu-button{}
 #header .header__area .header__wrap .header__menu .header__menu-button-wrap .header__menu-button img{}
+#header .header__area .header__wrap .header__right-menu{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);-moz-transform: translateY(-50%);-webkit-transform: translateY(-50%);-o-transform: translateY(-50%);
+}
 #header .header__area--style-title{}
 #header .header__area--style-title .header__wrap{
     min-height: 60px;
