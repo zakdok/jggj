@@ -1968,6 +1968,13 @@ input:focus-visible{
 .nav-icon-slider__button{}
 .nav-icon-slider__icon{}
 .nav-icon-slider__icon img{}
+.search .nav-icon-slider__icon img{
+    display: block;
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+}
 .nav-icon-slider__title-wrap{
     margin: 8px 0 0;
 }
