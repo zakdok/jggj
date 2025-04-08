@@ -2018,6 +2018,7 @@ input:focus-visible{
 .search__button{}
 .search__icon{}
 .search__form{
+    position: relative;
     width: 100%;
 }
 .search__input-wrap{}
@@ -2033,6 +2034,12 @@ input:focus-visible{
 .search__input::placeholder{
     color: #B4B7BE;
 }
+.search__button-wrap{
+    position: absolute;
+    right: 4px;
+    top: 2px;
+}
+.search__button-wrap .button{}
 .search-default__body{
     overflow: hidden;
 }
