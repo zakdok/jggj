@@ -1559,6 +1559,10 @@ input:focus-visible{
 }
 
 @media all and (min-width: 1440px){
+    .flatpickr-calendar.open{
+        left: 20px !important;
+        right: auto !important;
+    }
     .full-screen{
         display: block;
     }
