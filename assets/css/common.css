@@ -845,8 +845,9 @@
 .common-input-list__field input,
 .common-input-list__field select,
 .common-select__dropdown{
-    width: 100%;
+    width: 100% !important;
     height: 48px;
+    line-height: 46px;
     border: 1px solid #E4E7EA;
     border-radius: 8px;
     padding: 0 16px;
