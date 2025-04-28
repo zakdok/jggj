@@ -845,6 +845,7 @@
 .common-input-list__field input,
 .common-input-list__field select,
 .common-select__dropdown{
+    display: block !important;
     width: 100% !important;
     height: 48px;
     line-height: 46px;
@@ -853,6 +854,9 @@
     padding: 0 16px;
     font-size: 14px;
     font-weight: 400;
+}
+.common-input-list__field input[type='hidden']{
+    display: none !important;
 }
 .common-textarea{
     width: 100%;
