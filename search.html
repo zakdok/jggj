@@ -57,7 +57,7 @@
                     </div>
                 </div>
                 <!-- 기본 UI -->
-                <div class="search-default__body">
+                <!-- <div class="search-default__body">
                     <div class="search__recent-area">
                         <div class="search__top-title-area">
                             <div class="search__title-wrap">
@@ -330,7 +330,7 @@
                         spaceBetween: 16,
                     });
                     </script>
-                </div>
+                </div> -->
                 <!-- 검색어 입력 시 UI -->
                 <!-- <div class="search-autocomplete">
                     <div class="search-autocomplete__area">
@@ -420,15 +420,66 @@
                     </div>
                 </div> -->
                 <!-- 검색 결과 있을 경우 UI -->
-                <!-- <div class="search-result">
+                <div class="search-result">
                     <div class="search-result__area">
-                        <div class="search-result__top-text-area">
-                            <div class="search-result__text-wrap">
-                                <p class="search-result__text font-size__16 font-weight__400 c-gray__800">
-                                    <strong class="search-result__keyword font-weight__600 c-mint__500">‘검색어’</strong> 총 <strong class="search-result__count font-weight__600 c-gray__900">100개</strong>의 상품을 찾았습니다!
-                                </p>
+                        <article class="chip-icon-slider">
+                            <div class="chip-icon-slider__swiper swiper">
+                                <div class="chip-icon-slider__wrapper swiper-wrapper">
+                                    <!-- active class 추가 시 활성화 -->
+                                    <div class="chip-icon-slider__slide swiper-slide active">
+                                        <div class="chip-icon-slider__slide-inner">
+                                            <a href="#;" class="chip-icon-slider__button">
+                                                <div class="chip-icon-slider__title-wrap">
+                                                    <p class="chip-icon-slider__title">
+                                                        전체
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="chip-icon-slider__slide swiper-slide">
+                                        <div class="chip-icon-slider__slide-inner">
+                                            <a href="#;" class="chip-icon-slider__button">
+                                                <div class="chip-icon-slider__title-wrap">
+                                                    <p class="chip-icon-slider__title">
+                                                        투어·액티비티
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="chip-icon-slider__slide swiper-slide">
+                                        <div class="chip-icon-slider__slide-inner">
+                                            <a href="#;" class="chip-icon-slider__button">
+                                                <div class="chip-icon-slider__title-wrap">
+                                                    <p class="chip-icon-slider__title">
+                                                        입장권·패스권
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="chip-icon-slider__slide swiper-slide">
+                                        <div class="chip-icon-slider__slide-inner">
+                                            <a href="#;" class="chip-icon-slider__button">
+                                                <div class="chip-icon-slider__title-wrap">
+                                                    <p class="chip-icon-slider__title">
+                                                        현지 숙박
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </article>
+                        
+                        <script>
+                        var chipIconSlide = new Swiper(".chip-icon-slider .swiper", {
+                            slidesPerView: "auto",
+                            spaceBetween: 12,
+                        });
+                        </script>
                         <section class="more-items common-box__padding-24-20">
                             <div class="more-items__filter-title-area margin-bottom__16">
                                 <div class="more-items__title-wrap">
@@ -871,7 +922,7 @@
                             </div>
                         </section>
                     </div>
-                </div>                 -->
+                </div>                
             </section>
         </article>
         <!-- sorting popup -->

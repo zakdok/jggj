@@ -1540,8 +1540,8 @@ input:focus-visible{
 .full-screen__content-area{
     display: flex;
     height: 100dvh;
-    max-width: 710px;
-    padding-right: 410px;
+    max-width: 950px;
+    padding-right: 530px;
     margin: 0 auto;
     align-items: flex-end;
     justify-content: center;
@@ -1580,7 +1580,7 @@ input:focus-visible{
         display: block;
     }
     body{
-        max-width: 710px;
+        max-width: 950px;
         margin: 0 auto;
         display: flex;
         justify-content: flex-end;
@@ -1589,7 +1589,7 @@ input:focus-visible{
         position: relative;
         width: 100%;
         min-height: 100vh;
-        max-width: 345px;
+        max-width: 465px;
         z-index: 20;
         background-color: #fff;
         padding-bottom: 0;
@@ -1607,7 +1607,7 @@ input:focus-visible{
     .common-bottom-sheet-popup,
     .common-toast-popup,
     .search{
-        width: 345px !important;
+        width: 465px !important;
         left: 50% !important;
         margin-left: 10px !important;
     }
@@ -2183,9 +2183,7 @@ input:focus-visible{
 .search-empty__text-wrap{}
 .search-empty__title{}
 .search-empty__text{}
-.search-result{
-    padding: 32px 0 0;
-}
+.search-result{}
 .search-result__area{}
 .search-result__top-text-area{
     text-align: center;
@@ -2194,3 +2192,37 @@ input:focus-visible{
 .search-result__text{}
 .search-result__keyword{}
 .search-result__count{}
+.chip-icon-slider{
+    padding: 8px 20px 16px;
+}
+.chip-icon-slider__swiper{
+    overflow: visible;
+}
+.chip-icon-slider__wrapper{}
+.chip-icon-slider__slide{
+    width: auto !important;
+}
+.chip-icon-slider__slide-inner{}
+.chip-icon-slider__button{
+    display: flex;
+    height: 36px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 16px;
+    border-radius: 50px;
+    border: 1px solid #E4E7EA;
+}
+.chip-icon-slider__title-wrap{}
+.chip-icon-slider__title{
+    white-space: nowrap;
+    color: #6D6F73;
+    font-weight: 500;
+    font-size: 14px;
+}
+.chip-icon-slider__slide.active .chip-icon-slider__button{
+    background-color: #57B9B1;
+    border-color: #57B9B1;
+}
+.chip-icon-slider__slide.active .chip-icon-slider__title{
+    color: #fff;
+}
