@@ -1571,7 +1571,7 @@ input:focus-visible{
     margin-left: 8px;
 }
 
-@media all and (min-width: 1440px){
+@media all and (min-width: 1024px){
     .flatpickr-calendar.open{
         left: 20px !important;
         right: auto !important;
@@ -1975,20 +1975,31 @@ input:focus-visible{
 }
 .nav-icon-slider__wrapper{}
 .nav-icon-slider__slide{
-    width: 60px !important;
     text-align: center;
 }
-.nav-icon-slider2 .nav-icon-slider__slide{
-    width: auto !important;
-}
+.nav-icon-slider2 .nav-icon-slider__slide{}
 .nav-icon-slider__slide-inner{}
-.nav-icon-slider__button{}
-.nav-icon-slider__icon{}
-.nav-icon-slider__icon img{}
-.search .nav-icon-slider__icon img{
+.nav-icon-slider__button{
     display: block;
-    width: 64px;
-    height: 64px;
+    max-width: 130px;
+    margin: 0 auto;
+}
+.nav-icon-slider__icon{}
+.nav-icon-slider__icon img{
+    width: 100%;
+}
+.search .nav-icon-slider__icon{
+    position: relative;
+    height: 0;
+    padding-bottom: 100%;
+}
+.search .nav-icon-slider__icon img{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
     border-radius: 50%;
 }
@@ -1996,7 +2007,7 @@ input:focus-visible{
     margin: 8px 0 0;
 }
 .nav-icon-slider__title{
-    font-size: 12px;
+    font-size: 24px;
     font-weight: 400;
     color: #6D6F73;
     line-height: 1.2;
@@ -2004,6 +2015,15 @@ input:focus-visible{
 .nav-icon-slider2 .nav-icon-slider__title{
     color: #333;
 }
+@media (max-width: 767px), (min-width: 1024px) {
+    .nav-icon-slider__button{
+        max-width: 60px;
+    }
+    .nav-icon-slider__title{
+        font-size: 12px;
+    }
+}
+  
 /* search */
 .search{
     position: fixed;
