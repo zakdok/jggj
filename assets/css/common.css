@@ -1981,7 +1981,7 @@ input:focus-visible{
 .nav-icon-slider__slide-inner{}
 .nav-icon-slider__button{
     display: block;
-    max-width: 130px;
+    max-width: 60px;
     margin: 0 auto;
 }
 .nav-icon-slider__icon{}
@@ -2007,21 +2007,13 @@ input:focus-visible{
     margin: 8px 0 0;
 }
 .nav-icon-slider__title{
-    font-size: 24px;
+    font-size: 12px;
     font-weight: 400;
     color: #6D6F73;
     line-height: 1.2;
 }
 .nav-icon-slider2 .nav-icon-slider__title{
     color: #333;
-}
-@media (max-width: 767px), (min-width: 1024px) {
-    .nav-icon-slider__button{
-        max-width: 60px;
-    }
-    .nav-icon-slider__title{
-        font-size: 12px;
-    }
 }
   
 /* search */
