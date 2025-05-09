@@ -680,6 +680,12 @@
 .button--gray-stroke.enabled .text{
     color: #6D6F73;
 }
+.button--gray-stroke .ico{
+    margin-left: 8px;
+}
+.button--gray-stroke .ico img{
+    vertical-align: middle;
+}
 .button--point-stroke{
     display: flex;
     align-items: center;
@@ -2206,6 +2212,7 @@ input:focus-visible{
 .search-result__count{}
 .chip-icon-slider{
     padding: 8px 20px 16px;
+    border-bottom: 1px solid #E4E7EA;
 }
 .chip-icon-slider__swiper{
     overflow: visible;
@@ -2214,8 +2221,19 @@ input:focus-visible{
 .chip-icon-slider__slide{
     width: auto !important;
 }
-.chip-icon-slider__slide-inner{}
-.chip-icon-slider__button{
+.chip-icon-slider__slide-inner{
+    position: relative;
+}
+.chip-icon-slider__slide-inner input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.chip-icon-slider__slide-inner label{
     display: flex;
     height: 36px;
     align-items: center;
@@ -2231,10 +2249,10 @@ input:focus-visible{
     font-weight: 500;
     font-size: 14px;
 }
-.chip-icon-slider__slide.active .chip-icon-slider__button{
+.chip-icon-slider__slide-inner input:checked + label{
     background-color: #57B9B1;
     border-color: #57B9B1;
 }
-.chip-icon-slider__slide.active .chip-icon-slider__title{
+.chip-icon-slider__slide-inner input:checked + label .chip-icon-slider__title{
     color: #fff;
 }
