@@ -1582,6 +1582,11 @@ input:focus-visible{
         left: 20px !important;
         right: auto !important;
     }
+    .flatpickr-calendar.hasTime{
+        left: 50% !important;
+        right: auto !important;
+        margin-left: 30px !important;
+    }
     .full-screen{
         display: block;
     }
