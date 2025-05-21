@@ -24,6 +24,10 @@
     z-index: 20;
     background: linear-gradient(309.17deg, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.48) 100%);
 }
+#mv .mv__slide-bg.none-gradient::before{
+    display: none;
+    background: none;
+}
 .mv__slide-bg img{
     position: absolute;
     left: 0;
