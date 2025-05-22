@@ -2228,6 +2228,7 @@ input:focus-visible{
 .search-result__keyword{}
 .search-result__count{}
 .chip-icon-slider{
+    overflow: hidden;
     padding: 8px 20px 16px;
     border-bottom: 1px solid #E4E7EA;
 }
