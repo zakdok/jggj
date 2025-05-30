@@ -916,7 +916,7 @@
     align-items: center;
     justify-content: flex-start;
 }
-.common-label-list .common-label-list__label input[type="checkbox"]{
+.common-label-list .common-label-list__label input{
     position: absolute;
     left: 0;
     top: 0;
@@ -964,6 +964,12 @@
 }
 .common-label-list .common-label-list__label input:checked + label::before{
     background-image: url('../images/label-checkbox-on.svg');
+}
+.common-label-list .common-label-list__label_radio label::before{
+    background-image: url('../images/radio-icon-24x24.svg');
+}
+.common-label-list .common-label-list__label_radio input:checked + label::before{
+    background-image: url('../images/radio-icon-active-24x24.svg');
 }
 .common-label-list__style2{
     margin: 4px 0 0;
