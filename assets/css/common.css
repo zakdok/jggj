@@ -1830,6 +1830,12 @@ input:focus-visible{
     font-size: 14px;
     font-weight: 700;
 }
+.more-items__sale{
+    margin-left: 4px;
+    color: #FF5C5C;
+    font-size: 16px;
+    font-weight: 700;
+}
 .warning-text{
     padding: 0 20px;
 }
