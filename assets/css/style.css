@@ -271,15 +271,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 -8px;
+    margin: 0 -12px;
 }
 .main-sns-info__item{
-    padding: 0 8px;
+    padding: 0 12px;
 }
 .main-sns-info__item-inner{}
 .main-sns-info__button{}
 .main-sns-info__icon{}
 .main-sns-info__icon img{}
+.main-sns-info__title{
+    margin: 8px 0 0;
+    white-space: nowrap;
+    line-height: 1.4;
+}
 
 /* mvp local */
 .mvp-local-visual{
