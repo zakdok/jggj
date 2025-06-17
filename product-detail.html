@@ -122,26 +122,26 @@
             .then(response => response.text())
             .then(data => document.getElementById("headerOuter").innerHTML = data)
             .catch(error => console.error("헤더 로드 실패:", error));
-        function setBeforeHeight() {
-            var infoEl = document.querySelector('.product-detail__info');
-            var contentEl = document.querySelector('.product-detail__content');
+        // function setBeforeHeight() {
+        //     var infoEl = document.querySelector('.product-detail__info');
+        //     var contentEl = document.querySelector('.product-detail__content');
 
-            if (infoEl && contentEl) {
-                var infoHeight = infoEl.offsetHeight;
-                var height = window.innerHeight - 60 - infoHeight - 25 - 81;
-                contentEl.style.setProperty('--before-height', `${height}px`);
-            }
-        }
+        //     if (infoEl && contentEl) {
+        //         var infoHeight = infoEl.offsetHeight;
+        //         var height = window.innerHeight - 60 - infoHeight - 25 - 81;
+        //         contentEl.style.setProperty('--before-height', `${height}px`);
+        //     }
+        // }
 
         // 초기 실행
-        window.addEventListener('load', setBeforeHeight);
+        // window.addEventListener('load', setBeforeHeight);
 
         // 디바운스 설정 (resize 이벤트 최적화)
-        let resizeTimer;
-        window.addEventListener('resize', function () {
-            clearTimeout(resizeTimer);
-            resizeTimer = setTimeout(setBeforeHeight, 200);
-        });
+        // let resizeTimer;
+        // window.addEventListener('resize', function () {
+        //     clearTimeout(resizeTimer);
+        //     resizeTimer = setTimeout(setBeforeHeight, 200);
+        // });
 
 
     </script>

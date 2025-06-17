@@ -2364,7 +2364,8 @@ input:focus-visible{
     top: 0;
     display: block;
     width: 100%;
-    height: var(--before-height);
+    /* height: var(--before-height); */
+    height: 100%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, #FFF 102.9%);
 }
 .product-detail__content-inner{}
@@ -2376,8 +2377,11 @@ input:focus-visible{
 }
 #productDetail{
     overflow: hidden;
+    min-height: 100vh;
+    height: auto;
 }
 #productDetail .common-bottom-button-list{
+    position: fixed;
     bottom: 0;
     padding: 8px 20px 20px;
     background-color: #fff;
