@@ -1638,10 +1638,14 @@ input:focus-visible{
     .privacy-modal-popup,
     .common-bottom-sheet-popup,
     .common-toast-popup,
-    .search{
+    .search,
+    #productDetail .common-bottom-button-list{
         width: 465px !important;
         left: 50% !important;
         margin-left: 10px !important;
+    }
+    #productDetail{
+        padding-bottom: 145px !important;
     }
 }
 /* sorting list */
