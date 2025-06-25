@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>중국가자</title>
+    <!-- 외부 플러그인 및 폰트 CSS -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- // 외부 플러그인 및 폰트 CSS -->
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <!-- // 공통 css -->
+    <!-- 서브 페이지 css -->
+    <link rel="stylesheet" href="./assets/css/sub.css">
+    <!-- // 서브 페이지 css -->
+</head>
+<body>
+    <!-- 1440 bg -->
+    <div id="bg1440"></div>
+    <script>
+    // bg1440.html 파일을 불러와서 삽입
+    fetch("bg1440.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("bg1440").innerHTML = data)
+        .catch(error => console.error("백그라운드 로드 실패:", error));
+    </script>
+    <!-- // 1440 bg -->
+    <div id="wrapper">
+        <article id="contents">
+            <section id="findIdResult" class="find-id-result full-layout align-items-start">
+                <div class="find-id-result__area full-layout__area">
+                    <div class="find-id-result__wrap full-layout__wrap">
+                        <div class="common-result-area">
+                            <div class="common-result-wrap">
+                                <div class="find-id-result__text-area">
+                                    <div class="find-id-result__icon-wrap">
+                                        <p class="find-id-result__icon">
+                                            <img src="./assets/images/find-id-result-no.svg" alt="image">
+                                        </p>
+                                    </div>
+                                    <div class="find-id-result__title-wrap">
+                                        <p class="find-id-result__title c-gray__900 font-size__20 font-weight__700">
+                                            고객님! 오류가 발생했어요.
+                                        </p>
+                                        <p class="find-id-result__description c-gray__700 font-weight__300 font-size__14">
+                                            잠시 후 다시 시도해 주세요.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="common-bottom-button-list">
+                    <ul class="common-bottom-button-list__wrap">
+                        <li class="common-bottom-button-list__item">
+                            <div class="common-bottom-button-list__inner">
+                                <div class="common-bottom-button-list__button-wrap common-button-wrap">
+                                    <a href="#;" class="common-bottom-button-list__button common-button on font-size__16">
+                                        뒤로 가기
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </article>
+    </div>
+</body>
+</html>
