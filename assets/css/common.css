@@ -1179,7 +1179,9 @@ input:focus-visible{
     color: #FF5C5C;
 }
 .common-input-list__item.error .common-quantity__input,
-.common-input-list__item.error input{
+.common-input-list__item.error input,
+.common-input-list__item.error textarea,
+.common-input-list__item.error select{
     border-color: #FF5C5C;
 }
 .common-input-list__item.error input:focus-visible{
@@ -1188,7 +1190,9 @@ input:focus-visible{
 .common-input-list__item.error .common-input-list__error{
     display: block;
 }
-.common-input-list__item.disabled .common-input-list__field input{
+.common-input-list__item.disabled .common-input-list__field input,
+.common-input-list__item.disabled .common-input-list__field textarea,
+.common-input-list__item.disabled .common-input-list__field select{
     background-color: #F3F6F9;
     border-color: #E4E7EA;
     color: #C6C9D1;
@@ -2468,3 +2472,13 @@ input:focus-visible{
 .top-nav__dep1-con.active .top-nav__dep1::before{
     background-color: #57B9B1;
 }
+
+.exception-text{}
+.exception-text__wrap{
+    display: flex;
+    height: 248px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.exception-text__message{}

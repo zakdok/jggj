@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>중국가자</title>
+    <!-- 외부 플러그인 및 폰트 CSS -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- // 외부 플러그인 및 폰트 CSS -->
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <!-- // 공통 css -->
+    <!-- 서브 페이지 css -->
+    <link rel="stylesheet" href="./assets/css/sub.css">
+    <!-- // 서브 페이지 css -->
+</head>
+<body>
+    <!-- 1440 bg -->
+    <div id="bg1440"></div>
+    <script>
+    // bg1440.html 파일을 불러와서 삽입
+    fetch("bg1440.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("bg1440").innerHTML = data)
+        .catch(error => console.error("백그라운드 로드 실패:", error));
+    </script>
+    <!-- // 1440 bg -->
+    <div id="wrapper">
+        <div id="headerOuter"></div>
+        <article id="contents">
+            <section id="company" class="company full-layout">
+                <div class="company__area full-layout__area">
+                    <div class="company__wrap full-layout__wrap">
+                        <div class="company__result common-result">
+                            <div class="company__result-wrap common-result__wrap">
+                                <div class="company__text-area">
+                                    <div class="company__ico-wrap margin-bottom__24">
+                                        <p class="company__ico">
+                                            <img src="./assets/images/company-img1.svg" alt="image">
+                                        </p>
+                                    </div>
+                                    <div class="company__text-wrap margin-bottom__40">
+                                        <p class="company__text font-weight__400 font-size__14 c-gray__900">
+                                            大家好<br>
+                                            안녕하세요!<br>
+                                            중국여행 전문업체 '중국가자' 입니다.<br>
+                                            <br>
+                                            믿을 수 있는 맞춤형 여행 서비스<br>
+                                            투어·입장권·숙박·차량까지 한 번에 준비할 수 있습니다!<br>
+                                            <br>
+                                            여러분의 중국여행,<br>
+                                            중국가자가 잊지 못할 여행의 가치를 만들어 드릴게요!<br>
+                                            <br>
+                                            중국여행은 중국가자와 함께<br>
+                                            중국가자!
+                                        </p>
+                                    </div>
+                                    <div class="company__ico-wrap">
+                                        <p class="company__ico">
+                                            <img src="./assets/images/company-logo.svg" alt="logo">
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </div>
+    <script>
+        // header.html 파일을 불러와서 삽입
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("headerOuter").innerHTML = data)
+            .catch(error => console.error("헤더 로드 실패:", error));
+    </script>
+</body>
+</html>

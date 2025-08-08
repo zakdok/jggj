@@ -532,3 +532,18 @@
     max-width: 120px;
 }
 .order-info-bottom__total__text-value{}
+
+.company{
+    padding: 60px 0 0;
+}
+.company__area{}
+.company__wrap{}
+.company__result{}
+.company__result-wrap{}
+.company__text-area{
+    text-align: center;
+}
+.company__ico-wrap{}
+.company__ico{}
+.company__text-wrap{}
+.company__text{}
