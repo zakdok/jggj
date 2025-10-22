@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>중국가자</title>
+    <!-- 외부 플러그인 및 폰트 CSS -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- // 외부 플러그인 및 폰트 CSS -->
+    <!-- 공통 css -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- // 공통 css -->
+    <!-- 서브 페이지 css -->
+    <link rel="stylesheet" href="./assets/css/sub.css">
+    <!-- // 서브 페이지 css -->
+</head>
+<body>
+    <!-- 1440 bg -->
+    <div id="bg1440"></div>
+    <script>
+    // bg1440.html 파일을 불러와서 삽입
+    fetch("bg1440.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("bg1440").innerHTML = data)
+        .catch(error => console.error("백그라운드 로드 실패:", error));
+    </script>
+    <!-- // 1440 bg -->
+     
+    <div id="wrapper">
+        <div id="headerOuter"></div>
+        <article id="contents">
+            <section class="search !top-[60px] !h-[calc(100%-60px)]" id="search">
+                <div class="pt-4 px-5 pb-10 mb-4">
+                    <div class="mb-4">
+                        <p class="font-pretendard font-bold text-[16px] leading-[140%] tracking-[-0.03em] text-[#333333]">
+                            어떤 지역으로 떠나볼까요? ✈️
+                        </p>
+                    </div>
+                    <div>
+                        <ul class="mt-[-16px] mx-[-13px] px-2 text-[0px]">
+                            <li class="inline-block w-1/4 px-[13px] pt-4 text-center text-[10px] align-top">
+                                <button class="block">
+                                    <p class="py-2"><img src="./assets/images/location-tour-ico1.svg" alt="thumbnail"></p>
+                                    <p class="font-medium text-[12px] text-[#333]">
+                                        상해
+                                    </p>
+                                </button>
+                            </li>
+                            <li class="inline-block w-1/4 px-[13px] pt-4 text-center text-[10px] align-top">
+                                <button class="block">
+                                    <p class="py-2"><img src="./assets/images/location-tour-ico2.svg" alt="thumbnail"></p>
+                                    <p class="font-medium text-[12px] text-[#333]">
+                                        항저우
+                                    </p>
+                                </button>
+                            </li>
+                            <li class="inline-block w-1/4 px-[13px] pt-4 text-center text-[10px] align-top">
+                                <button class="block">
+                                    <p class="py-2"><img src="./assets/images/location-tour-ico3.svg" alt="thumbnail"></p>
+                                    <p class="font-medium text-[12px] text-[#333]">
+                                        원저우
+                                    </p>
+                                </button>
+                            </li>
+                            <li class="inline-block w-1/4 px-[13px] pt-4 text-center text-[10px] align-top">
+                                <button class="block">
+                                    <p class="py-2"><img src="./assets/images/location-tour-ico4.svg" alt="thumbnail"></p>
+                                    <p class="font-medium text-[12px] text-[#333]">
+                                        푸저우
+                                    </p>
+                                </button>
+                            </li>
+                            <li class="inline-block w-1/4 px-[13px] pt-4 text-center text-[10px] align-top">
+                                <button class="block">
+                                    <p class="py-2"><img src="./assets/images/location-tour-ico5.svg" alt="thumbnail"></p>
+                                    <p class="font-medium text-[12px] text-[#333]">
+                                        샤먼
+                                    </p>
+                                </button>
+                            </li>
+                            <li class="inline-block w-1/4 px-[13px] pt-4 text-center text-[10px] align-top">
+                                <button class="block">
+                                    <p class="py-2"><img src="./assets/images/location-tour-ico6.svg" alt="thumbnail"></p>
+                                    <p class="font-medium text-[12px] text-[#333]">
+                                        칭다오
+                                    </p>
+                                </button>
+                            </li>
+                            <li class="inline-block w-1/4 px-[13px] pt-4 text-center text-[10px] align-top">
+                                <button class="block">
+                                    <p class="py-2"><img src="./assets/images/location-tour-ico7.svg" alt="thumbnail"></p>
+                                    <p class="font-medium text-[12px] text-[#333]">
+                                        산터우
+                                    </p>
+                                </button>
+                            </li>
+                            <li class="inline-block w-1/4 px-[13px] pt-4 text-center text-[10px] align-top">
+                                <button class="block">
+                                    <p class="py-2"><img src="./assets/images/location-tour-ico8.svg" alt="thumbnail"></p>
+                                    <p class="font-medium text-[12px] text-[#333]">
+                                        심천
+                                    </p>
+                                </button>
+                            </li>
+                            <li class="inline-block w-1/4 px-[13px] pt-4 text-center text-[10px] align-top">
+                                <button class="block">
+                                    <p class="py-2"><img src="./assets/images/location-tour-ico9.svg" alt="thumbnail"></p>
+                                    <p class="font-medium text-[12px] text-[#333]">
+                                        주하이
+                                    </p>
+                                </button>
+                            </li>
+                            <li class="inline-block w-1/4 px-[13px] pt-4 text-center text-[10px] align-top">
+                                <button class="block">
+                                    <p class="py-2"><img src="./assets/images/location-tour-ico10.svg" alt="thumbnail"></p>
+                                    <p class="font-medium text-[12px] text-[#333]">
+                                        하이난
+                                    </p>
+                                </button>
+                            </li>
+                            <li class="inline-block w-1/4 px-[13px] pt-4 text-center text-[10px] align-top">
+                                <button class="block">
+                                    <p class="py-2"><img src="./assets/images/location-tour-ico11.svg" alt="thumbnail"></p>
+                                    <p class="font-medium text-[12px] text-[#333]">
+                                        위해
+                                    </p>
+                                </button>
+                            </li>
+                            <li class="inline-block w-1/4 px-[13px] pt-4 text-center text-[10px] align-top">
+                                <button class="block">
+                                    <p class="py-2"><img src="./assets/images/location-tour-ico12.svg" alt="thumbnail"></p>
+                                    <p class="font-medium text-[12px] text-[#333]">
+                                        베이하이
+                                    </p>
+                                </button>
+                            </li>
+                            <li class="inline-block w-1/4 px-[13px] pt-4 text-center text-[10px] align-top">
+                                <button class="block">
+                                    <p class="py-2"><img src="./assets/images/location-tour-ico13.svg" alt="thumbnail"></p>
+                                    <p class="font-medium text-[12px] text-[#333]">
+                                        쿤밍
+                                    </p>
+                                </button>
+                            </li>
+                            <li class="inline-block w-1/4 px-[13px] pt-4 text-center text-[10px] align-top">
+                                <button class="block">
+                                    <p class="py-2"><img src="./assets/images/location-tour-ico14.svg" alt="thumbnail"></p>
+                                    <p class="font-medium text-[12px] text-[#333]">
+                                        다리
+                                    </p>
+                                </button>
+                            </li>
+                            <li class="inline-block w-1/4 px-[13px] pt-4 text-center text-[10px] align-top">
+                                <button class="block">
+                                    <p class="py-2"><img src="./assets/images/location-tour-ico15.svg" alt="thumbnail"></p>
+                                    <p class="font-medium text-[12px] text-[#333]">
+                                        텅충
+                                    </p>
+                                </button>
+                            </li>
+                            <li class="inline-block w-1/4 px-[13px] pt-4 text-center text-[10px] align-top">
+                                <button class="block">
+                                    <p class="py-2"><img src="./assets/images/location-tour-ico16.svg" alt="thumbnail"></p>
+                                    <p class="font-medium text-[12px] text-[#333]">
+                                        하얼빈
+                                    </p>
+                                </button>
+                            </li>
+                            <li class="inline-block w-1/4 px-[13px] pt-4 text-center text-[10px] align-top">
+                                <button class="block">
+                                    <p class="py-2"><img src="./assets/images/location-tour-ico17.svg" alt="thumbnail"></p>
+                                    <p class="font-medium text-[12px] text-[#333]">
+                                        연태
+                                    </p>
+                                </button>
+                            </li>
+                            <li class="inline-block w-1/4 px-[13px] pt-4 text-center text-[10px] align-top">
+                                <button class="block">
+                                    <p class="py-2"><img src="./assets/images/location-tour-ico18.svg" alt="thumbnail"></p>
+                                    <p class="font-medium text-[12px] text-[#333]">
+                                        연길
+                                    </p>
+                                </button>
+                            </li>
+                            <li class="inline-block w-1/4 px-[13px] pt-4 text-center text-[10px] align-top">
+                                <button class="block">
+                                    <p class="py-2"><img src="./assets/images/location-tour-ico19.svg" alt="thumbnail"></p>
+                                    <p class="font-medium text-[12px] text-[#333]">
+                                        북경
+                                    </p>
+                                </button>
+                            </li>
+                            <li class="inline-block w-1/4 px-[13px] pt-4 text-center text-[10px] align-top">
+                                <button class="block">
+                                    <p class="py-2"><img src="./assets/images/location-tour-ico20.svg" alt="thumbnail"></p>
+                                    <p class="font-medium text-[12px] text-[#333]">
+                                        대련
+                                    </p>
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </div>
+    <script>
+        // header.html 파일을 불러와서 삽입
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => document.getElementById("headerOuter").innerHTML = data)
+            .catch(error => console.error("헤더 로드 실패:", error));
+    </script>
+</body>
+</html>
