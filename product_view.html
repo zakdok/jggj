@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>중국가자</title>
+    <!-- 외부 플러그인 및 폰트 CSS -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- // 외부 플러그인 및 폰트 CSS -->
+    <!-- 공통 css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- // 공통 css -->
+</head>
+<body class="lg:max-w-[950px] lg:!mx-auto lg:flex lg:justify-end bg-gray-100">
+    <!-- 1440 bg -->
+    <div id="bg1440"></div>
+    <script>
+    // bg1440.html 파일을 불러와서 삽입
+    fetch("bg1440.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("bg1440").innerHTML = data)
+        .catch(error => console.error("백그라운드 로드 실패:", error));
+    </script>
+    <!-- // 1440 bg -->
+    <div id="wrapper" class="overflow-hidden py-[0] pb-[64px] lg:relative lg:w-full lg:min-h-screen lg:max-w-[465px] lg:z-20 lg:bg-white lg:pb-0">
+        <div id="headerOuter">
+            <div id="header" class="fixed left-0 top-0 w-full z-[99999] lg:!w-[465px] lg:!left-1/2 lg:!ml-[10px] bg-transparent">
+                <div class="flex h-[60px] items-center justify-center text-center font-pretendard font-semibold text-[20px] leading-[100%] text-white">
+                    입장권·패스권
+                </div>
+                <div class="absolute left-[20px] top-0 flex h-[60px] items-center">
+                    <a href="#;"><img src="./assets/images/product-view-header-ico4.svg" alt="icon"></a>
+                    <a href="#;"><img src="./assets/images/product-view-header-ico1.svg" alt="icon"></a>
+                </div>
+                <div class="absolute right-[20px] top-0 flex h-[60px] items-center">
+                    <a href="#;"><img src="./assets/images/product-view-header-ico2.svg" alt="icon"></a>
+                    <a href="#;"><img src="./assets/images/product-view-header-ico3.svg" alt="icon"></a>
+                </div>
+            </div>
+        </div>
+        <article id="contents">
+            <section>
+                
+            </section>
+        </article>
+    </div>
+</body>
+</html>
