@@ -40,11 +40,788 @@
                 </div>
             </div>
         </div>
-        <article id="contents">
+        <article id="contents" class="pb-[91px]">
             <section>
-                
+                <div class="swiper mySwiper product-visual-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/images/product-detail-bg1.png" class="w-full h-screen object-cover" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/product-detail-bg1.png" class="w-full h-screen object-cover" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/product-detail-bg1.png" class="w-full h-screen object-cover" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/product-detail-bg1.png" class="w-full h-screen object-cover" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/images/product-detail-bg1.png" class="w-full h-screen object-cover" />
+                        </div>
+                    </div>
+                    <div class="swiper-pagination flex w-[54px] h-[20px] leading-[20px] items-center justify-center rounded-[50px] bg-[#000000B2] bottom-[16px] left-auto right-[20px] font-medium text-[10px] text-white tracking-[3px]"></div>
+
+                    <div class="absolute left-0 bottom-[36px] w-full px-5 z-[9999]">
+                        <div class="flex items-center mb-1">
+                            <div class="mr-[2px]"><img src="./assets/images/location_on.svg" alt="icon"></div>
+                            <p class="font-semibold text-[14px] leading-[22px] tracking-[0px] text-white">
+                                칭다오
+                            </p>
+                        </div>
+                        <div class="mb-2">
+                            <p class="font-semibold text-[22px] leading-[1.2] tracking-[0px] text-white">
+                                [칭다오여행] 청도자유여행 해저세계 언더워터월드 입장권
+                            </p>
+                        </div>
+                        <div class="flex items-center mb-2">
+                            <p class="mr-[2px] font-bold text-[28px] leading-[22px] tracking-[0px] text-[#57B9B1]">
+                                34,000
+                            </p>
+                            <p class="font-semibold text-[16px] leading-[22px] tracking-[0px] text-white">
+                                원~
+                            </p>
+                        </div>
+                        <div class="flex h-[36px] items-center">
+                            <div class="mr-1"><img src="./assets/images/product-detail-star.svg" alt="icon"></div>
+                            <p class="mr-1 font-semibold text-[14px] leading-[22px] tracking-[0px] text-[#E4E7EA]">
+                                5.0
+                            </p>
+                            <p
+                                class="font-normal text-[14px] leading-[22px] tracking-[-0.02em] underline decoration-solid underline-offset-0 decoration-[0%] text-[#D1D4DA]">
+                                (리뷰 10개)
+                            </p>
+
+                        </div>
+                    </div>
+                    
+
+                    <!-- .t11 -->
+                    <p class="mr-1 font-semibold text-[14px] leading-[22px] tracking-[0px] text-[#E4E7EA]"></p>
+
+                    <!-- .t12 -->
+                    <p class="font-normal text-[14px] leading-[22px] tracking-[-0.02em] underline underline-offset-0 decoration-solid decoration-[0%] text-[#D1D4DA]"></p>
+
+                </div>
+                <script>
+                    var swiper = new Swiper(".product-visual-slide", {
+                        pagination: {
+                            el: ".swiper-pagination",
+                            type: "fraction",
+                        },
+                        navigation: {
+                            nextEl: ".swiper-button-next",
+                            prevEl: ".swiper-button-prev",
+                        },
+                        autoplay: {
+                            delay: 5000,
+                            disableOnInteraction: false,
+                        },
+                    });
+                </script>
+                <div class="py-[40px] px-[20px]">
+                    <div class="mb-[24px]">
+                        <h2 class="font-bold text-[18px] leading-[100%] tracking-[-0.03em] text-[#333333]">
+                            상품 소개
+                        </h2>
+                    </div>
+                    <div class="pb-[8px]">
+                        <p class="font-semibold text-[14px] leading-[140%] tracking-[-0.02em] text-[#57B9B1]">
+                            깊고 푸른 바다 속으로 떠나는 신비한 여행, <br>
+                            칭다오 해저 세계!
+                        </p>
+                    </div>
+                    <hr class="h-[1px] my-[12px] bg-[#E4E7EA] border-0" />
+                    <div class="pt-[8px]">
+                        <p class="font-normal text-[14px] leading-[140%] tracking-[-0.02em] text-[#333]">
+                            칭다오 해저세계는 중국 칭다오에 위치한 대형 해양 테마파크로, 해양 생태계와 관련된 다양한 전시와 체험을 즐길 수 있는 인기 명소입니다. <br>
+                            칭다오 시내에 자리 잡고 있어 접근성이 좋고, 가족 여행객과 해양 생물을 좋아하는 사람들에게 특히 추천드려요.
+                        </p>
+                    </div>
+                </div>
+                <div class="h-[8px] bg-[#F3F6F9]"></div>
+                <section class="py-[40px] px-[20px]">
+                    <div class="pb-[8px]">
+                        <h2 class="font-bold text-[18px] leading-[100%] tracking-[-0.03em]">
+                            상품 정보
+                        </h2>
+                    </div>
+                    <hr class="h-[1px] my-[12px] bg-[#E4E7EA] border-0" />
+                    <div class="py-[8px]">
+                        <!-- 펼쳐보기 버튼 클릭시 h-[888px] class 제거-->
+                        <div class="relative h-[888px] overflow-hidden">
+                            <img class="w-full" src="./assets/images/product-detail-image.png" alt="">
+                            <!-- 펼쳐보기 버튼 클릭시 하단 element 제거-->
+                            <div
+                                class="absolute left-0 bottom-[-87px] w-full h-[176px] bg-[linear-gradient(0deg,#FFFFFF_41.24%,rgba(255,255,255,0)_100%)]">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-[50px] pb-[15px]">
+                        <button
+                            class="flex w-[289px] h-[40px] mx-auto items-center justify-center rounded-[8px] border border-[#57B9B1] text-[#57B9B1]">
+                            <p class="font-semibold text-[16px] leading-[100%] tracking-[0%] text-[#57B9B1]">
+                                펼쳐보기
+                            </p>
+                            <img src="./assets/images/product-detail-more-arrow.svg" alt="icon">
+                        </button>
+                    </div>
+                    <hr class="h-[1px] my-[12px] bg-[#E4E7EA] border-0" />
+                    <div class="pt-[8px]">
+                        <div class="mb-[8px]">
+                            <p class="font-semibold text-[18px] leading-[100%] tracking-[-0.03em] text-[#333]">
+                                수령 및 사용방법
+                            </p>
+                        </div>
+                        <p class="relative pl-4 font-normal text-[14px] leading-[140%] tracking-[-0.03em] text-[#333]">
+                            <span class="absolute left-[2px] top-[0.25em] text-[#333] text-[14px] leading-none">•</span>
+                            여권 제시 후 입장 가능
+                        </p>
+                        <p class="relative pl-4 font-normal text-[14px] leading-[140%] tracking-[-0.03em] text-[#333]">
+                            <span class="absolute left-[2px] top-[0.25em] text-[#333] text-[14px] leading-none">•</span>
+                            좌석은 지정석이므로 예매 완료 후 좌석 메시지 안내<br>
+                            (좌석 문자 없을 시 입구에서 좌석 확인 필요)
+                        </p>
+                    </div>
+                </section>
+                <div class="h-[8px] bg-[#F3F6F9]"></div>
+                <section class="py-[40px] px-[20px]">
+                    <div class="mb-[24px]">
+                        <p class="font-bold text-[18px] leading-[100%] tracking-[-0.03em] text-[#333]">
+                            필수 확인 사항
+                        </p>
+                    </div>
+                    <p class="relative pl-4 font-normal text-[12px] leading-[140%] tracking-[-0.03em] text-[#333]">
+                        <span class="absolute left-[2px] top-[0.1em] text-[#333] text-[12px] leading-none">•</span>
+                        출국일 기준 여권 유효기간은 6개월 이상을 권장드립니다.
+                    </p>
+                    <p class="relative pl-4 font-normal text-[12px] leading-[140%] tracking-[-0.03em] text-[#333]">
+                        <span class="absolute left-[2px] top-[0.1em] text-[#333] text-[12px] leading-none">•</span>
+                        현지 교통, 날씨 등의 사정에 따라 일정이 변경될 수 있습니다.
+                    </p>
+                    <p class="relative pl-4 font-normal text-[12px] leading-[140%] tracking-[-0.03em] text-[#333]">
+                        <span class="absolute left-[2px] top-[0.1em] text-[#333] text-[12px] leading-none">•</span>
+                        자유일정 중 발생한 안전사고/도난/질병 등은 책임지지 않습니다.
+                    </p>
+                </section>
+                <div class="h-[8px] bg-[#F3F6F9]"></div>
+                <section class="py-[40px] px-[20px]">
+                    <div class="mb-[24px]">
+                        <p class="font-bold text-[18px] leading-[100%] tracking-[-0.03em] text-[#333]">
+                            이용 안내
+                        </p>
+                    </div>
+                    <div class="mb-[16px]">
+                        <p class="font-semibold text-[16px] leading-[100%] tracking-[-0.03em] text-[#333]">
+                            미팅 포인트
+                        </p>
+                    </div>
+                    <div class="mb-[16px]">
+                        <p class="font-normal text-[14px] leading-[140%] tracking-[-0.03em]">
+                            출국장에서 나오면 고객님 성함이 적힌 미팅 피켓을 든 기사님이 기다리고 계실 거예요!
+                        </p>
+                    </div>
+                    <p><img src="./assets/images/product-detail-picket.png" alt="image"></p>
+                    <div class="py-[24px]">
+                        <hr class="h-[1px] my-[12px] bg-[#E4E7EA] border-0" />
+                    </div>
+                    <div class="mb-[16px]">
+                        <p class="font-semibold text-[16px] leading-[100%] tracking-[-0.03em] text-[#333]">
+                            추가 안내사항
+                        </p>
+                    </div>
+                    <p class="relative pl-4 font-normal text-[14px] leading-[140%] tracking-[-0.03em] text-[#333]">
+                        <span class="absolute left-[2px] top-[0.15em] text-[#333] text-[14px] leading-none">•</span>
+                        점심시간 1시간 포함되어 있습니다.
+                    </p>
+                    <p class="relative pl-4 font-normal text-[14px] leading-[140%] tracking-[-0.03em] text-[#333]">
+                        <span class="absolute left-[2px] top-[0.15em] text-[#333] text-[14px] leading-none">•</span>
+                        여행지 현지 상황에 따라 시간이 변경될 수 있는 점 고려해 주세요.
+                    </p>
+                    <p class="relative pl-4 font-normal text-[14px] leading-[140%] tracking-[-0.03em] text-[#333]">
+                        <span class="absolute left-[2px] top-[0.15em] text-[#333] text-[14px] leading-none">•</span>
+                        투어 확정 후 묵으시는 호텔과 만나는 시간은 상의해서 정해요 :)
+                    </p>
+                    <div class="py-[24px]">
+                        <hr class="h-[1px] my-[12px] bg-[#E4E7EA] border-0" />
+                    </div>
+                    <div class="mb-[24px]">
+                        <p class="font-semibold text-[16px] leading-[100%] tracking-[-0.03em] text-[#333]">
+                            포함 · 불포함 사항
+                        </p>
+                    </div>
+                    <div class="mb-[24px]">
+                        <div class="flex items-start">
+                            <p class="mr-[8px]"><img src="./assets/images/product-detail-check.svg" alt=""></p>
+                            <div>
+                                <div class="mb-[8px]">
+                                    <p class="font-semibold text-[14px] leading-[100%] tracking-[-0.03em]">
+                                        포함 사항
+                                    </p>
+                                </div>
+                                <div class="-mt-[8px]">
+                                    <div class="pt-[8px]">
+                                        <p class="relative pl-4 font-normal text-[14px] leading-[140%] tracking-[-0.03em] text-[#333]">
+                                            <span class="absolute left-[2px] top-[0.15em] text-[#333] text-[14px] leading-none">•</span>
+                                            한국인 가이드
+                                        </p>
+                                    </div>
+                                    <div class="pt-[8px]">
+                                        <p class="relative pl-4 font-normal text-[14px] leading-[140%] tracking-[-0.03em] text-[#333]">
+                                            <span class="absolute left-[2px] top-[0.15em] text-[#333] text-[14px] leading-none">•</span>
+                                            드라이빙 가이드
+                                        </p>
+                                    </div>
+                                    <div class="pt-[8px]">
+                                        <p class="relative pl-4 font-normal text-[14px] leading-[140%] tracking-[-0.03em] text-[#333]">
+                                            <span class="absolute left-[2px] top-[0.15em] text-[#333] text-[14px] leading-none">•</span>
+                                            전용차량
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex items-start">
+                            <p class="mr-[8px]"><img src="./assets/images/product-detail-nonecheck.svg" alt=""></p>
+                            <div>
+                                <div class="mb-[8px]">
+                                    <p class="font-semibold text-[14px] leading-[100%] tracking-[-0.03em]">
+                                        불포함 사항
+                                    </p>
+                                </div>
+                                <div class="-mt-[8px]">
+                                    <div class="pt-[8px]">
+                                        <p class="relative pl-4 font-normal text-[14px] leading-[140%] tracking-[-0.03em] text-[#333]">
+                                            <span class="absolute left-[2px] top-[0.15em] text-[#333] text-[14px] leading-none">•</span>
+                                            한국인 가이드
+                                        </p>
+                                    </div>
+                                    <div class="pt-[8px]">
+                                        <p class="relative pl-4 font-normal text-[14px] leading-[140%] tracking-[-0.03em] text-[#333]">
+                                            <span class="absolute left-[2px] top-[0.15em] text-[#333] text-[14px] leading-none">•</span>
+                                            드라이빙 가이드
+                                        </p>
+                                    </div>
+                                    <div class="pt-[8px]">
+                                        <p class="relative pl-4 font-normal text-[14px] leading-[140%] tracking-[-0.03em] text-[#333]">
+                                            <span class="absolute left-[2px] top-[0.15em] text-[#333] text-[14px] leading-none">•</span>
+                                            전용차량
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="h-[8px] bg-[#F3F6F9]"></div>
+                <section class="py-[40px] px-[20px]">
+                    <div class="mb-[24px]">
+                        <p class="font-bold text-[18px] leading-[100%] tracking-[-0.03em] text-[#333]">
+                            취소 및 환불 규정
+                        </p>
+                    </div>
+                    <p class="relative pl-4 font-normal text-[12px] leading-[140%] tracking-[-0.03em] text-[#333]">
+                        <span class="absolute left-[2px] top-[0.1em] text-[#333] text-[12px] leading-none">•</span>
+                        체크인 30일전 취소 전액환불
+                    </p>
+                    <p class="relative pl-4 font-normal text-[12px] leading-[140%] tracking-[-0.03em] text-[#333]">
+                        <span class="absolute left-[2px] top-[0.1em] text-[#333] text-[12px] leading-none">•</span>
+                        체크인 29 ~ 15일전 취소 30% 공제
+                    </p>
+                    <p class="relative pl-4 font-normal text-[12px] leading-[140%] tracking-[-0.03em] text-[#333]">
+                        <span class="absolute left-[2px] top-[0.1em] text-[#333] text-[12px] leading-none">•</span>
+                        체크인 14 ~ 4일전 취소 50% 공제
+                    </p>
+                    <p class="relative pl-4 font-normal text-[12px] leading-[140%] tracking-[-0.03em] text-[#333]">
+                        <span class="absolute left-[2px] top-[0.1em] text-[#333] text-[12px] leading-none">•</span>
+                        체크인 3일 ~ 당일 취소 및 노쇼 환불불가
+                    </p>
+                    <p class="relative pl-4 font-normal text-[12px] leading-[140%] tracking-[-0.03em] text-[#333]">
+                        <span class="absolute left-[2px] top-[0.1em] text-[#333] text-[12px] leading-none">•</span>
+                        숙소 이용 후, 숙소의 시설 또는 서비스를 이유로 보상을 요구할 수 없습니다.
+                    </p>
+                    <p class="relative pl-4 font-normal text-[12px] leading-[140%] tracking-[-0.03em] text-[#333]">
+                        <span class="absolute left-[2px] top-[0.1em] text-[#333] text-[12px] leading-none">•</span>
+                        숙소 이용 중 발생한 상해나 질병 또는 재산상의 손실에 대해 마이리얼트립이 보상 의무를 지지 않습니다.
+                    </p>
+                    <p class="relative pl-4 font-normal text-[12px] leading-[140%] tracking-[-0.03em] text-[#333]">
+                        <span class="absolute left-[2px] top-[0.1em] text-[#333] text-[12px] leading-none">•</span>
+                        고객이 예약한 객실이 아닌 다른 객실이 숙소에 의해 제공된 경우, 고객이 숙소에 의해 제공된 객실을 이용하거나 숙소의 기타 보상 안을 수용한 경우, 마이리얼트립은 별도의 보상 의무를 지지 않습니다.
+                    </p>
+                </section>
+                <div class="h-[8px] bg-[#F3F6F9]"></div>
+            </section>
+            <section class="pt-[40px] px-[20px] overflow-hidden">
+                <div class="flex items-center mb-[24px]">
+                    <p class="text-[#333] font-bold text-[18px] leading-[100%] tracking-[-0.03em]">
+                        총<strong class="mx-[4px] text-[#57B9B1]">100</strong>건의 리뷰가 있어요!
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center items-center py-[24px] bg-[#F3F6F9] rounded-[8px] mb-[24px]">
+                    <div class="flex items-center mb-[8px]">
+                        <p><img src="./assets/images/product-detail-review-star.svg" alt="icon"></p>
+                        <p><img src="./assets/images/product-detail-review-star.svg" alt="icon"></p>
+                        <p><img src="./assets/images/product-detail-review-star.svg" alt="icon"></p>
+                        <p><img src="./assets/images/product-detail-review-star.svg" alt="icon"></p>
+                        <p><img src="./assets/images/product-detail-review-star.svg" alt="icon"></p>
+                    </div>
+                    <div class="flex items-end">
+                        <p class="font-semibold text-[24px] leading-[100%] tracking-[0%] text-[#333]">
+                            4.97
+                        </p>
+                        <p class="ml-[4px] font-normal text-[20px] leading-[100%] text-[#C6C9D1]">
+                            /5.0
+                        </p>
+                    </div>
+                </div>
+                <ul class="mb-[24px]">
+                    <li>
+                        <div class="py-[8px]">
+                            <div class="flex items-center mb-[16px]">
+                                <div class="w-[48px] min-w-[48px] max-w-[48px] mr-[8px]"><img src="./assets/images/product-detail-review-profile.svg" alt="profile"></div>
+                                <div>
+                                    <p class="mb-[8px] font-semibold text-[12px] leading-[100%] tracking-[0%]">
+                                        이*민
+                                    </p>
+                                    <p class="font-normal text-[12px] leading-[100%] tracking-[0%]">
+                                        2025년 01월 20일
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mb-[12px]">
+                                <!-- 
+                                아래 플러그인 추가 해야 n줄 이상 ... 처리 css가 작동 하니 참고해주시면 감사하겠습니다
+                                // tailwind.config.js
+                                module.exports = {
+                                    plugins: [
+                                        require('@tailwindcss/line-clamp'),
+                                    ],
+                                }
+                                -->
+                                <p
+                                    class="font-normal text-[14px] leading-[150%] tracking-[-0.03em] overflow-hidden text-ellipsis line-clamp-9 text-[#333]">
+                                    부모님의 첫 해외여행을 요모와 함께해서 너무 좋았습니다. 부모님이 해외여행이 처음이라 걱정이 많았었는데, 부모님 모두 너무 행복했다고 하고, 요모 소개말 그대로 딱 우리끼리 프라이빗한 여행을 할 수 있어서 너무
+                                    좋았습니다. 함께하신 김수영 가이드님이 너무 잘 해주셔서 더 행복하게 여행을 하지 않았나 싶습니다. (매 끼니마다 술 찾는 저희 가족때문에 정말 고생많으셨습니다 ㅠㅠㅠ) 차가 많이 막혀 일정이 조정이 필요할 때
+                                    여유롭게 대처해주시고, 마지막 날에 제가 혼자 따로 움직여야 하는 상황인데, 부모님 취향을 맞춰서 제 취향이 담겼던 일정은 전부 취소하고 부모님을 위해 온천 일정으로 다시 조정을 제안해주셔서 마음이 놓였습니다. 특히
+                                    야시장과 버블티 가게에서 대신 줄 서드릴테니 편하게 구경하시하고 했을 때 ㅠㅠㅜ 감동 ㅠㅠ🥺 준비해주신 차량도 너무 편안하고 좋았네요.. 설에 있는 대가족 여행도 요모를 통해서 신청해야겠습니다!
+                                    부모님의 첫 해외여행을 요모와 함께해서 너무 좋았습니다. 부모님이 해외여행이 처음이라 걱정이 많았었는데, 부모님 모두 너무 행복했다고 하고, 요모 소개말 그대로 딱 우리끼리 프라이빗한 여행을 할 수 있어서 너무
+                                    좋았습니다. 함께하신 김수영 가이드님이 너무 잘 해주셔서 더 행복하게 여행을 하지 않았나 싶습니다. (매 끼니마다 술 찾는 저희 가족때문에 정말 고생많으셨습니다 ㅠㅠㅠ) 차가 많이 막혀 일정이 조정이 필요할 때
+                                    여유롭게 대처해주시고, 마지막 날에 제가 혼자 따로 움직여야 하는 상황인데, 부모님 취향을 맞춰서 제 취향이 담겼던 일정은 전부 취소하고 부모님을 위해 온천 일정으로 다시 조정을 제안해주셔서 마음이 놓였습니다. 특히
+                                    야시장과 버블티 가게에서 대신 줄 서드릴테니 편하게 구경하시하고 했을 때 ㅠㅠㅜ 감동 ㅠㅠ🥺 준비해주신 차량도 너무 편안하고 좋았네요.. 설에 있는 대가족 여행도 요모를 통해서 신청해야겠습니다!
+                                </p>
+                            </div>
+                            <div class="py-[2px]">
+                                <div class="swiper product-review-thumbnail-slide !overflow-visible">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-[8px]">
+                                <hr class="h-[1px] my-[12px] bg-[#E4E7EA] border-0" />
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="py-[8px]">
+                            <div class="flex items-center mb-[16px]">
+                                <div class="w-[48px] min-w-[48px] max-w-[48px] mr-[8px]"><img src="./assets/images/product-detail-review-profile.svg" alt="profile"></div>
+                                <div>
+                                    <p class="mb-[8px] font-semibold text-[12px] leading-[100%] tracking-[0%]">
+                                        이*민
+                                    </p>
+                                    <p class="font-normal text-[12px] leading-[100%] tracking-[0%]">
+                                        2025년 01월 20일
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mb-[12px]">
+                                <p
+                                    class="font-normal text-[14px] leading-[150%] tracking-[-0.03em] overflow-hidden text-ellipsis line-clamp-9 text-[#333]">
+                                    부모님의 첫 해외여행을 요모와 함께해서 너무 좋았습니다. 부모님이 해외여행이 처음이라 걱정이 많았었는데, 부모님 모두 너무 행복했다고 하고, 요모 소개말 그대로 딱 우리끼리 프라이빗한 여행을 할 수 있어서 너무
+                                    좋았습니다. 함께하신 김수영 가이드님이 너무 잘 해주셔서 더 행복하게 여행을 하지 않았나 싶습니다. (매 끼니마다 술 찾는 저희 가족때문에 정말 고생많으셨습니다 ㅠㅠㅠ) 차가 많이 막혀 일정이 조정이 필요할 때
+                                    여유롭게 대처해주시고, 마지막 날에 제가 혼자 따로 움직여야 하는 상황인데, 부모님 취향을 맞춰서 제 취향이 담겼던 일정은 전부 취소하고 부모님을 위해 온천 일정으로 다시 조정을 제안해주셔서 마음이 놓였습니다. 특히
+                                    야시장과 버블티 가게에서 대신 줄 서드릴테니 편하게 구경하시하고 했을 때 ㅠㅠㅜ 감동 ㅠㅠ🥺 준비해주신 차량도 너무 편안하고 좋았네요.. 설에 있는 대가족 여행도 요모를 통해서 신청해야겠습니다!
+                                    부모님의 첫 해외여행을 요모와 함께해서 너무 좋았습니다. 부모님이 해외여행이 처음이라 걱정이 많았었는데, 부모님 모두 너무 행복했다고 하고, 요모 소개말 그대로 딱 우리끼리 프라이빗한 여행을 할 수 있어서 너무
+                                    좋았습니다. 함께하신 김수영 가이드님이 너무 잘 해주셔서 더 행복하게 여행을 하지 않았나 싶습니다. (매 끼니마다 술 찾는 저희 가족때문에 정말 고생많으셨습니다 ㅠㅠㅠ) 차가 많이 막혀 일정이 조정이 필요할 때
+                                    여유롭게 대처해주시고, 마지막 날에 제가 혼자 따로 움직여야 하는 상황인데, 부모님 취향을 맞춰서 제 취향이 담겼던 일정은 전부 취소하고 부모님을 위해 온천 일정으로 다시 조정을 제안해주셔서 마음이 놓였습니다. 특히
+                                    야시장과 버블티 가게에서 대신 줄 서드릴테니 편하게 구경하시하고 했을 때 ㅠㅠㅜ 감동 ㅠㅠ🥺 준비해주신 차량도 너무 편안하고 좋았네요.. 설에 있는 대가족 여행도 요모를 통해서 신청해야겠습니다!
+                                </p>
+                            </div>
+                            <div class="py-[2px]">
+                                <div class="swiper product-review-thumbnail-slide !overflow-visible">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-[8px]">
+                                <hr class="h-[1px] my-[12px] bg-[#E4E7EA] border-0" />
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="py-[8px]">
+                            <div class="flex items-center mb-[16px]">
+                                <div class="w-[48px] min-w-[48px] max-w-[48px] mr-[8px]"><img src="./assets/images/product-detail-review-profile.svg" alt="profile"></div>
+                                <div>
+                                    <p class="mb-[8px] font-semibold text-[12px] leading-[100%] tracking-[0%]">
+                                        이*민
+                                    </p>
+                                    <p class="font-normal text-[12px] leading-[100%] tracking-[0%]">
+                                        2025년 01월 20일
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mb-[12px]">
+                                <p
+                                    class="font-normal text-[14px] leading-[150%] tracking-[-0.03em] overflow-hidden text-ellipsis line-clamp-9 text-[#333]">
+                                    부모님의 첫 해외여행을 요모와 함께해서 너무 좋았습니다. 부모님이 해외여행이 처음이라 걱정이 많았었는데, 부모님 모두 너무 행복했다고 하고, 요모 소개말 그대로 딱 우리끼리 프라이빗한 여행을 할 수 있어서 너무
+                                    좋았습니다. 함께하신 김수영 가이드님이 너무 잘 해주셔서 더 행복하게 여행을 하지 않았나 싶습니다. (매 끼니마다 술 찾는 저희 가족때문에 정말 고생많으셨습니다 ㅠㅠㅠ) 차가 많이 막혀 일정이 조정이 필요할 때
+                                    여유롭게 대처해주시고, 마지막 날에 제가 혼자 따로 움직여야 하는 상황인데, 부모님 취향을 맞춰서 제 취향이 담겼던 일정은 전부 취소하고 부모님을 위해 온천 일정으로 다시 조정을 제안해주셔서 마음이 놓였습니다. 특히
+                                    야시장과 버블티 가게에서 대신 줄 서드릴테니 편하게 구경하시하고 했을 때 ㅠㅠㅜ 감동 ㅠㅠ🥺 준비해주신 차량도 너무 편안하고 좋았네요.. 설에 있는 대가족 여행도 요모를 통해서 신청해야겠습니다!
+                                    부모님의 첫 해외여행을 요모와 함께해서 너무 좋았습니다. 부모님이 해외여행이 처음이라 걱정이 많았었는데, 부모님 모두 너무 행복했다고 하고, 요모 소개말 그대로 딱 우리끼리 프라이빗한 여행을 할 수 있어서 너무
+                                    좋았습니다. 함께하신 김수영 가이드님이 너무 잘 해주셔서 더 행복하게 여행을 하지 않았나 싶습니다. (매 끼니마다 술 찾는 저희 가족때문에 정말 고생많으셨습니다 ㅠㅠㅠ) 차가 많이 막혀 일정이 조정이 필요할 때
+                                    여유롭게 대처해주시고, 마지막 날에 제가 혼자 따로 움직여야 하는 상황인데, 부모님 취향을 맞춰서 제 취향이 담겼던 일정은 전부 취소하고 부모님을 위해 온천 일정으로 다시 조정을 제안해주셔서 마음이 놓였습니다. 특히
+                                    야시장과 버블티 가게에서 대신 줄 서드릴테니 편하게 구경하시하고 했을 때 ㅠㅠㅜ 감동 ㅠㅠ🥺 준비해주신 차량도 너무 편안하고 좋았네요.. 설에 있는 대가족 여행도 요모를 통해서 신청해야겠습니다!
+                                </p>
+                            </div>
+                            <div class="py-[2px]">
+                                <div class="swiper product-review-thumbnail-slide !overflow-visible">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-[8px]">
+                                <hr class="h-[1px] my-[12px] bg-[#E4E7EA] border-0" />
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="py-[8px]">
+                            <div class="flex items-center mb-[16px]">
+                                <div class="w-[48px] min-w-[48px] max-w-[48px] mr-[8px]"><img src="./assets/images/product-detail-review-profile.svg" alt="profile"></div>
+                                <div>
+                                    <p class="mb-[8px] font-semibold text-[12px] leading-[100%] tracking-[0%]">
+                                        이*민
+                                    </p>
+                                    <p class="font-normal text-[12px] leading-[100%] tracking-[0%]">
+                                        2025년 01월 20일
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="mb-[12px]">
+                                <p
+                                    class="font-normal text-[14px] leading-[150%] tracking-[-0.03em] overflow-hidden text-ellipsis line-clamp-9 text-[#333]">
+                                    부모님의 첫 해외여행을 요모와 함께해서 너무 좋았습니다. 부모님이 해외여행이 처음이라 걱정이 많았었는데, 부모님 모두 너무 행복했다고 하고, 요모 소개말 그대로 딱 우리끼리 프라이빗한 여행을 할 수 있어서 너무
+                                    좋았습니다. 함께하신 김수영 가이드님이 너무 잘 해주셔서 더 행복하게 여행을 하지 않았나 싶습니다. (매 끼니마다 술 찾는 저희 가족때문에 정말 고생많으셨습니다 ㅠㅠㅠ) 차가 많이 막혀 일정이 조정이 필요할 때
+                                    여유롭게 대처해주시고, 마지막 날에 제가 혼자 따로 움직여야 하는 상황인데, 부모님 취향을 맞춰서 제 취향이 담겼던 일정은 전부 취소하고 부모님을 위해 온천 일정으로 다시 조정을 제안해주셔서 마음이 놓였습니다. 특히
+                                    야시장과 버블티 가게에서 대신 줄 서드릴테니 편하게 구경하시하고 했을 때 ㅠㅠㅜ 감동 ㅠㅠ🥺 준비해주신 차량도 너무 편안하고 좋았네요.. 설에 있는 대가족 여행도 요모를 통해서 신청해야겠습니다!
+                                    부모님의 첫 해외여행을 요모와 함께해서 너무 좋았습니다. 부모님이 해외여행이 처음이라 걱정이 많았었는데, 부모님 모두 너무 행복했다고 하고, 요모 소개말 그대로 딱 우리끼리 프라이빗한 여행을 할 수 있어서 너무
+                                    좋았습니다. 함께하신 김수영 가이드님이 너무 잘 해주셔서 더 행복하게 여행을 하지 않았나 싶습니다. (매 끼니마다 술 찾는 저희 가족때문에 정말 고생많으셨습니다 ㅠㅠㅠ) 차가 많이 막혀 일정이 조정이 필요할 때
+                                    여유롭게 대처해주시고, 마지막 날에 제가 혼자 따로 움직여야 하는 상황인데, 부모님 취향을 맞춰서 제 취향이 담겼던 일정은 전부 취소하고 부모님을 위해 온천 일정으로 다시 조정을 제안해주셔서 마음이 놓였습니다. 특히
+                                    야시장과 버블티 가게에서 대신 줄 서드릴테니 편하게 구경하시하고 했을 때 ㅠㅠㅜ 감동 ㅠㅠ🥺 준비해주신 차량도 너무 편안하고 좋았네요.. 설에 있는 대가족 여행도 요모를 통해서 신청해야겠습니다!
+                                </p>
+                            </div>
+                            <div class="py-[2px]">
+                                <div class="swiper product-review-thumbnail-slide !overflow-visible">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                        <div class="swiper-slide !w-auto">
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <button
+                    class="flex w-full h-[40px] mx-auto items-center justify-center rounded-[8px] border border-[#57B9B1] text-[#57B9B1]">
+                    <p class="font-semibold text-[16px] leading-[100%] tracking-[0%] text-[#57B9B1]">
+                        리뷰 전체보기
+                    </p>
+                </button>
             </section>
         </article>
     </div>
+    <div class="fixed left-0 bottom-0 py-[8px] px-[20px] bg-[#fff] border-t border-[#E4E7EA] z-[9999] lg:!w-[465px] lg:!left-1/2 lg:!ml-[10px]">
+        <!-- 
+        비활성화 시 bg-[#57B9B1] > bg-[#57B9B133] 로 변경
+        -->
+        <a href="#;" class="bg-[#57B9B1] flex items-center justify-center w-full h-[48px] rounded-[8px]">
+            <p class="font-semibold text-[16px] leading-[100%] tracking-[0%] text-[#fff]">
+                예약하기
+            </p>
+        </a>
+    </div>
+    <!-- <div class="fixed left-0 bottom-0 w-full z-[999999] px-[20px] pb-[16px] lg:!w-[465px] lg:!left-1/2 lg:!ml-[10px]">
+        <div
+            class="flex h-[48px] items-center justify-center text-center bg-[rgba(108,111,117,0.7)] rounded-[8px] text-[#fff]">
+            해당 상품은 구매가 불가능합니다!
+        </div>
+    </div> -->
+    <div class="fixed left-0 top-0 w-full h-full pt-[60px] overflow-y-auto z-[999999] bg-[#fff] lg:!w-[465px] lg:!left-1/2 lg:!ml-[10px]">
+        <div class="fixed left-0 top-0 w-full z-[999999] lg:!w-[465px] lg:!left-1/2 lg:!ml-[10px] bg-[#fff]">
+            <div
+                class="flex h-[60px] items-center justify-center text-center font-pretendard font-semibold text-[20px] leading-[100%] text-[#333]">
+                리뷰
+            </div>
+            <div class="absolute left-[20px] top-0 flex h-[60px] items-center">
+                <a href="#;"><img src="./assets/images/header-close-ico.svg" alt="icon"></a>
+            </div>
+        </div>
+        <div class="pt-[16px]">
+            <p class="text-center font-semibold text-[18px] leading-[100%] tracking-[0%]">
+                고객님들은 이렇게 평가했어요 💬
+            </p>
+        </div>
+        <section class="pt-[40px] px-[20px] overflow-hidden">
+            <div class="flex items-center mb-[24px]">
+                <p class="text-[#333] font-bold text-[18px] leading-[100%] tracking-[-0.03em]">
+                    총<strong class="mx-[4px] text-[#57B9B1]">100</strong>건의 리뷰가 있어요!
+                </p>
+            </div>
+            <div class="flex flex-col justify-center items-center py-[24px] bg-[#F3F6F9] rounded-[8px] mb-[24px]">
+                <div class="flex items-center mb-[8px]">
+                    <p><img src="./assets/images/product-detail-review-star.svg" alt="icon"></p>
+                    <p><img src="./assets/images/product-detail-review-star.svg" alt="icon"></p>
+                    <p><img src="./assets/images/product-detail-review-star.svg" alt="icon"></p>
+                    <p><img src="./assets/images/product-detail-review-star.svg" alt="icon"></p>
+                    <p><img src="./assets/images/product-detail-review-star.svg" alt="icon"></p>
+                </div>
+                <div class="flex items-end">
+                    <p class="font-semibold text-[24px] leading-[100%] tracking-[0%] text-[#333]">
+                        4.97
+                    </p>
+                    <p class="ml-[4px] font-normal text-[20px] leading-[100%] text-[#C6C9D1]">
+                        /5.0
+                    </p>
+                </div>
+            </div>
+            <ul class="mb-[24px]">
+                <li>
+                    <div class="py-[8px]">
+                        <div class="flex items-center mb-[14px]">
+                            <div class="w-[48px] min-w-[48px] max-w-[48px] mr-[8px]"><img src="./assets/images/product-detail-review-profile.svg" alt="profile"></div>
+                            <div>
+                                <p class="mb-[8px] font-semibold text-[12px] leading-[100%] tracking-[0%]">
+                                    이*민
+                                </p>
+                                <p class="font-normal text-[12px] leading-[100%] tracking-[0%]">
+                                    2025년 01월 20일
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex mb-[14px] items-center justify-start">
+                            <p><img src="./assets/images/product-detail-review-star-small.svg" alt="icon"></p>
+                            <p><img src="./assets/images/product-detail-review-star-small.svg" alt="icon"></p>
+                            <p><img src="./assets/images/product-detail-review-star-small.svg" alt="icon"></p>
+                            <p><img src="./assets/images/product-detail-review-star-small.svg" alt="icon"></p>
+                            <p><img src="./assets/images/product-detail-review-star-small.svg" alt="icon"></p>
+                        </div>
+                        <div class="mb-[4px]">
+                            <!-- 
+                            아래 플러그인 추가 해야 n줄 이상 ... 처리 css가 작동 하니 참고해주시면 감사하겠습니다
+                            // tailwind.config.js
+                            module.exports = {
+                                plugins: [
+                                    require('@tailwindcss/line-clamp'),
+                                ],
+                            }
+                            -->
+                            <p
+                                class="font-normal text-[14px] leading-[150%] tracking-[-0.03em] overflow-hidden text-ellipsis line-clamp-9 text-[#333]">
+                                부모님의 첫 해외여행을 요모와 함께해서 너무 좋았습니다. 부모님이 해외여행이 처음이라 걱정이 많았었는데, 부모님 모두 너무 행복했다고 하고, 요모 소개말 그대로 딱 우리끼리 프라이빗한 여행을 할 수 있어서 너무
+                                좋았습니다. 함께하신 김수영 가이드님이 너무 잘 해주셔서 더 행복하게 여행을 하지 않았나 싶습니다. (매 끼니마다 술 찾는 저희 가족때문에 정말 고생많으셨습니다 ㅠㅠㅠ) 차가 많이 막혀 일정이 조정이 필요할 때
+                                여유롭게 대처해주시고, 마지막 날에 제가 혼자 따로 움직여야 하는 상황인데, 부모님 취향을 맞춰서 제 취향이 담겼던 일정은 전부 취소하고 부모님을 위해 온천 일정으로 다시 조정을 제안해주셔서 마음이 놓였습니다. 특히
+                                야시장과 버블티 가게에서 대신 줄 서드릴테니 편하게 구경하시하고 했을 때 ㅠㅠㅜ 감동 ㅠㅠ🥺 준비해주신 차량도 너무 편안하고 좋았네요.. 설에 있는 대가족 여행도 요모를 통해서 신청해야겠습니다!
+                                부모님의 첫 해외여행을 요모와 함께해서 너무 좋았습니다. 부모님이 해외여행이 처음이라 걱정이 많았었는데, 부모님 모두 너무 행복했다고 하고, 요모 소개말 그대로 딱 우리끼리 프라이빗한 여행을 할 수 있어서 너무
+                                좋았습니다. 함께하신 김수영 가이드님이 너무 잘 해주셔서 더 행복하게 여행을 하지 않았나 싶습니다. (매 끼니마다 술 찾는 저희 가족때문에 정말 고생많으셨습니다 ㅠㅠㅠ) 차가 많이 막혀 일정이 조정이 필요할 때
+                                여유롭게 대처해주시고, 마지막 날에 제가 혼자 따로 움직여야 하는 상황인데, 부모님 취향을 맞춰서 제 취향이 담겼던 일정은 전부 취소하고 부모님을 위해 온천 일정으로 다시 조정을 제안해주셔서 마음이 놓였습니다. 특히
+                                야시장과 버블티 가게에서 대신 줄 서드릴테니 편하게 구경하시하고 했을 때 ㅠㅠㅜ 감동 ㅠㅠ🥺 준비해주신 차량도 너무 편안하고 좋았네요.. 설에 있는 대가족 여행도 요모를 통해서 신청해야겠습니다!
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-end p-[8px] mb-[12px]">
+                            <button class="flex items-center justify-end">
+                                <p class="font-normal text-[12px] leading-[100%] tracking-[0%] text-[#8D8F94]">
+                                    더보기
+                                </p>
+                                <!-- 접어두기 시 rotate-180 class 추가 -->
+                                <p class="transition duration-[250ms]"><img src="./assets/images/product-detail-review-more-arrow.svg" alt="icon"></p>
+                            </button>
+                        </div>
+                        <div class="py-[2px]">
+                            <div class="swiper product-review-thumbnail-slide !overflow-visible">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide !w-auto">
+                                        <button>
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide !w-auto">
+                                        <button>
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide !w-auto">
+                                        <button>
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide !w-auto">
+                                        <button>
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </button>
+                                    </div>
+                                    <div class="swiper-slide !w-auto">
+                                        <button>
+                                            <img class="w-[96px] h-[96px] object-cover" src="./assets/images/product-detail-review-thumbnail.png" />
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pt-[6px]">
+                            <div class="py-[8px] flex items-center justify-start">
+                                <div class="mr-[8px]">
+                                    <p class="font-normal text-[12px] leading-[100%] tracking-[0%] align-middle text-[#8D8F94]">
+                                        도움이 돼요
+                                    </p>
+                                </div>
+                                <button class="flex items-center">
+                                    <span class="mr-[2px]">
+                                        <img src="./assets/images/product-detail-review-thumbsup.svg" alt="icon">
+                                    </span>
+                                    <span class="font-normal text-[12px] leading-[100%] tracking-[0%] text-[#8D8F94]">
+                                        10
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="py-[8px]">
+                            <hr class="h-[1px] my-[12px] bg-[#E4E7EA] border-0" />
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <div class="fixed left-0 top-0 w-full h-full bg-[#00000099] z-[9999999] lg:!w-[465px] lg:!left-1/2 lg:!ml-[10px]">
+            <div class="flex w-full h-full items-center justify-center">
+                <div class="swiper review-detail-slide">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="w-full max-h-[calc(100vh-208px)] object-cover" src="./assets/images/review-popup-thumbnail.png" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="w-full max-h-[calc(100vh-208px)] object-cover" src="./assets/images/review-popup-thumbnail2.png" />
+                        </div>
+                    </div>
+                    <div class="absolute right-0 top-0 z-[90]">
+                        <button><img src="./assets/images/review-popup-close.svg" alt="icon"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center absolute left-0 bottom-[30px] w-full z-[90]">
+                <div thumbsSlider="" class="swiper review-detail-slide-pagination">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide !w-auto">
+                            <img src="./assets/images/review-popup-thumbnail.png" class="w-[64px] h-[64px] object-cover" />
+                        </div>
+                        <div class="swiper-slide !w-auto">
+                            <img src="./assets/images/review-popup-thumbnail2.png" class="w-[64px] h-[64px] object-cover" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    var swiper = new Swiper(".product-review-thumbnail-slide", {
+        slidesPerView: "auto",
+        spaceBetween: 4,
+    });
+    var reviewDetailSlide = new Swiper(".review-detail-slide", {
+        autoHeight: true,
+        spaceBetween: 10,
+        thumbs: {
+            swiper: reviewDetailSlidePagination,
+        },
+    });
+    var reviewDetailSlidePagination = new Swiper(".review-detail-slide-pagination", {
+        spaceBetween: 4,
+        slidesPerView: "auto",
+        freeMode: true,
+        watchSlidesProgress: true,
+    });
+</script>
 </body>
 </html>
