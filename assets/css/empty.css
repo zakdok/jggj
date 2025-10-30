@@ -1,28 +1,18 @@
 .t1{
-    text-align: center;
+    position: fixed;
+    right: 20px;
+    bottom: 76px;
+    z-index: 9999999;
 }
 .t2{
-    margin-bottom: 22px;
 }
 .t2{
-    margin: 0 auto;
 }
 .t3{
-    margin-bottom: 12px;
 }
 .t4{
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 130%;
-    letter-spacing: 0%;
-    color: #57B9B1;
 }
 .t5{
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 140%;
-    letter-spacing: 0%;
-    color: #8D8F94;
 }
 .t6{
 }
