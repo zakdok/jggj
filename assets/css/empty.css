@@ -1,29 +1,31 @@
 .t1{
-    position: relative;
+    position: fixed;
+    left: 0;
+    top: 0;
     width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border-radius: 8px;
-    padding-right: 40px;
-}
-.t2{
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    color: #fff;
+    height: 100%;
+    background-color: #00000030;
+    z-index: 9999;
 }
 .t2{
     position: absolute;
-    right: 8px;
-    top: 8px;
+    left: 50%;
+    top: 50%;
+    width: 296px;
+    transform: translate(-50% -50%);
+    padding: 16px 24px;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+}
+.t2{
+    margin-bottom: 4px;
 }
 .t3{
+    margin: 0 auto;
 }
 .t4{
+    mb16
 }
 .t5{
 }

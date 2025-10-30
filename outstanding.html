@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>중국가자</title>
+    <!-- 외부 플러그인 및 폰트 CSS -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css" integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js" integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- // 외부 플러그인 및 폰트 CSS -->
+    <!-- 공통 css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- // 공통 css -->
+</head>
+<body class="lg:max-w-[950px] lg:!mx-auto lg:flex lg:justify-end bg-gray-100">
+    <!-- 1440 bg -->
+    <div id="bg1440"></div>
+    <script>
+    // bg1440.html 파일을 불러와서 삽입
+    fetch("bg1440.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("bg1440").innerHTML = data)
+        .catch(error => console.error("백그라운드 로드 실패:", error));
+    </script>
+    <!-- // 1440 bg -->
+    <div id="wrapper" class="overflow-hidden py-[0] pb-[64px] lg:relative lg:w-full lg:min-h-screen lg:max-w-[465px] lg:z-20 lg:bg-white lg:pb-0">
+        <div id="headerOuter">
+            <div id="header" class="fixed left-0 top-0 w-full z-[99999] lg:!w-[465px] lg:!left-1/2 lg:!ml-[10px] bg-fff">
+                <div class="flex h-[60px] items-center justify-center text-center font-pretendard font-semibold text-[18px] leading-[100%] text-[#333]">
+                    내 예약
+                </div>
+                <div class="absolute left-[20px] top-0 flex h-[60px] items-center">
+                    <a href="#;"><img src="./assets/images/history-back-ico-gray-900-40x40.svg" alt="icon"></a>
+                </div>
+            </div>
+        </div>
+        <article id="contents" class="pb-[40px] pt-[60px]">
+            <nav class="pt-[8px] px-[20px] overflow-hidden">
+                <div class="pt-[12px]">
+                    <div class="swiper nav-slide !overflow-visible">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide !w-auto">
+                                <!-- active 시 class 변경 text-[#333] > text-[#57B9B1] -->
+                                <button
+                                    class="relative flex w-[104px] h-[36px] items-center justify-center text-center font-medium text-[14px] leading-[100%] tracking-[-0.03em] text-[#57B9B1]">
+                                    <!-- active 시 element 생성 -->
+                                    <span
+                                        class="after:content-[''] after:absolute after:left-0 after:bottom-0 after:block after:w-full after:h-[2px] after:bg-[#57B9B1] active:after:block"></span>
+                                    예정된 예약
+                                </button>
+                            </div>
+                            <div class="swiper-slide !w-auto">
+                                <button
+                                    class="relative flex w-[104px] h-[36px] items-center justify-center text-center font-medium text-[14px] leading-[100%] tracking-[-0.03em] text-[#333]">
+                                    지난 예약
+                                </button>
+                            </div>
+                            <div class="swiper-slide !w-auto">
+                                <button
+                                    class="relative flex w-[104px] h-[36px] items-center justify-center text-center font-medium text-[14px] leading-[100%] tracking-[-0.03em] text-[#333]">
+                                    취소된 예약
+                                </button>
+                            </div>
+                            <div class="swiper-slide !w-auto">
+                                <button
+                                    class="relative flex w-[104px] h-[36px] items-center justify-center text-center font-medium text-[14px] leading-[100%] tracking-[-0.03em] text-[#333]">
+                                    미결제 예약
+                                </button>
+                            </div>
+                            <div class="swiper-slide !w-auto">
+                                <button
+                                    class="relative flex w-[104px] h-[36px] items-center justify-center text-center font-medium text-[14px] leading-[100%] tracking-[-0.03em] text-[#333]">
+                                    기존 예약
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <section class="py-[108px] text-center">
+                <p class="font-normal text-[16px] leading-[100%] tracking-[-0.03em] text-[#B4B7BE]">
+                    미결제된 예약이 없어요.
+                </p>
+            </section>
+            <section class="pt-[16px] mb-[40px]">
+                <ul class="-mt-[40px]">
+                    <li class="pt-[40px]">
+                        <div class="px-[20px] mb-[16px] font-semibold text-[18px] leading-[100%] tracking-[0%] text-[#333]">
+                            2025.04.25
+                        </div>
+                        <div class="relative px-[8px] pl-[36px]">
+                            <div class="absolute left-[20px] top-[28px] w-[1px] h-[calc(100%-28px)] bg-[#E4E7EA]"></div>
+                    
+                            <div class="-mt-[24px] pt-[24px] px-[8px]">
+                                <div class="relative mb-[16px] font-medium text-[14px] leading-[100%] tracking-[0%] text-[#6D6F73]
+                                    before:content-[''] before:absolute before:left-[-27.5px] before:top-[3px]
+                                    before:block before:w-[8px] before:h-[8px] before:bg-[#E4E7EA] before:rounded-full">
+                                    주문번호 : linkBlm3AvsoWcN
+                                </div>
+                                <div>
+                                    <ul class="-mt-[24px]">
+                                        <li class=" pt-[24px]">
+                                            <div class="p-[16px_16px_20px] rounded-[8px] border border-[#E4E7EA]">
+                                                <div class="mb-[12px] flex items-center justify-start">
+                                                    <!-- 
+                                                                    상태에 따라 앞에 2개 class 변경
+                                                                    결제 대기 : bg-[#FF5C5C] text-[#fff]
+                                                                    예약완료 : bg-[#E3F1FF] text-[#5592FC]
+                                                                    예약취소 : bg-[#FFDEDE] text-[#FF5C5C]
+                                                                    예약 중 : bg-[#FFF8E3] text-[#FFBB27]
+                                                                    예약대기 : bg-[#DDF5DF] text-[#49C652]
+                                                                    이용완료 : bg-[#E4E7EA] text-[#B4B7BE]
+                                                                    -->
+                                                    <div class="bg-[#FF5C5C] text-[#fff] flex items-center justify-center py-[5px] px-[16px] rounded-[8px]">
+                                                        <p class="font-medium text-[12px] leading-[100%] tracking-[0%]">
+                                                            결제대기
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img src="./assets/images/thumbnail-dummy-80x80.png" alt="thumbnail"
+                                                        class="w-[80px] max-w-[80px] min-w-[80px] h-[80px] object-cover rounded-[8px]" />
+                                                    <div class="relative w-full pl-[9px] pr-[45px]">
+                                                        <div class="mb-[4px]">
+                                                            <p class="font-normal text-[12px] leading-[100%] tracking-[0%] text-[#6D6F73]">
+                                                                현지 숙박
+                                                            </p>
+                                                        </div>
+                                                        <p class="font-semibold text-[14px] leading-[120%] tracking-[0%] text-[#333]">
+                                                            [하얼빈여행] 하얼빈 타임스테이아파트 호텔숙소
+                                                        </p>
+                                                        <a href="#;" class="absolute right-0 top-1/2 -translate-y-1/2">
+                                                            <img src="./assets/images/outstanding-arrow.svg" alt="icon">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class=" pt-[24px]">
+                                            <div class="p-[16px_16px_20px] rounded-[8px] border border-[#E4E7EA]">
+                                                <div class="mb-[12px] flex items-center justify-start">
+                                                    <div class="bg-[#FF5C5C] text-[#fff] flex items-center justify-center py-[5px] px-[16px] rounded-[8px]">
+                                                        <p class="font-medium text-[12px] leading-[100%] tracking-[0%]">
+                                                            결제대기
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img src="./assets/images/thumbnail-dummy-80x80.png" alt="thumbnail"
+                                                        class="w-[80px] max-w-[80px] min-w-[80px] h-[80px] object-cover rounded-[8px]" />
+                                                    <div class="relative w-full pl-[9px] pr-[45px]">
+                                                        <div class="mb-[4px]">
+                                                            <p class="font-normal text-[12px] leading-[100%] tracking-[0%] text-[#6D6F73]">
+                                                                현지 숙박
+                                                            </p>
+                                                        </div>
+                                                        <p class="font-semibold text-[14px] leading-[120%] tracking-[0%] text-[#333]">
+                                                            [하얼빈여행] 하얼빈 타임스테이아파트 호텔숙소
+                                                        </p>
+                                                        <a href="#;" class="absolute right-0 top-1/2 -translate-y-1/2">
+                                                            <img src="./assets/images/outstanding-arrow.svg" alt="icon">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="pt-[40px]">
+                        <div class="px-[20px] mb-[16px] font-semibold text-[18px] leading-[100%] tracking-[0%] text-[#333]">
+                            2025.04.25
+                        </div>
+                        <div class="relative px-[8px] pl-[36px]">
+                            <div class="absolute left-[20px] top-[28px] w-[1px] h-[calc(100%-28px)] bg-[#E4E7EA]"></div>
+                    
+                            <div class="-mt-[24px] pt-[24px] px-[8px]">
+                                <div class="relative mb-[16px] font-medium text-[14px] leading-[100%] tracking-[0%] text-[#6D6F73]
+                                    before:content-[''] before:absolute before:left-[-27.5px] before:top-[3px]
+                                    before:block before:w-[8px] before:h-[8px] before:bg-[#E4E7EA] before:rounded-full">
+                                    주문번호 : linkBlm3AvsoWcN
+                                </div>
+                                <div>
+                                    <ul class="-mt-[24px]">
+                                        <li class=" pt-[24px]">
+                                            <div class="p-[16px_16px_20px] rounded-[8px] border border-[#E4E7EA]">
+                                                <div class="mb-[12px] flex items-center justify-start">
+                                                    <!-- 
+                                                                    상태에 따라 앞에 2개 class 변경
+                                                                    결제 대기 : bg-[#FF5C5C] text-[#fff]
+                                                                    예약완료 : bg-[#E3F1FF] text-[#5592FC]
+                                                                    예약취소 : bg-[#FFDEDE] text-[#FF5C5C]
+                                                                    예약 중 : bg-[#FFF8E3] text-[#FFBB27]
+                                                                    예약대기 : bg-[#DDF5DF] text-[#49C652]
+                                                                    이용완료 : bg-[#E4E7EA] text-[#B4B7BE]
+                                                                    -->
+                                                    <div class="bg-[#FF5C5C] text-[#fff] flex items-center justify-center py-[5px] px-[16px] rounded-[8px]">
+                                                        <p class="font-medium text-[12px] leading-[100%] tracking-[0%]">
+                                                            결제대기
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img src="./assets/images/thumbnail-dummy-80x80.png" alt="thumbnail"
+                                                        class="w-[80px] max-w-[80px] min-w-[80px] h-[80px] object-cover rounded-[8px]" />
+                                                    <div class="relative w-full pl-[9px] pr-[45px]">
+                                                        <div class="mb-[4px]">
+                                                            <p class="font-normal text-[12px] leading-[100%] tracking-[0%] text-[#6D6F73]">
+                                                                현지 숙박
+                                                            </p>
+                                                        </div>
+                                                        <p class="font-semibold text-[14px] leading-[120%] tracking-[0%] text-[#333]">
+                                                            [하얼빈여행] 하얼빈 타임스테이아파트 호텔숙소
+                                                        </p>
+                                                        <a href="#;" class="absolute right-0 top-1/2 -translate-y-1/2">
+                                                            <img src="./assets/images/outstanding-arrow.svg" alt="icon">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class=" pt-[24px]">
+                                            <div class="p-[16px_16px_20px] rounded-[8px] border border-[#E4E7EA]">
+                                                <div class="mb-[12px] flex items-center justify-start">
+                                                    <div class="bg-[#FF5C5C] text-[#fff] flex items-center justify-center py-[5px] px-[16px] rounded-[8px]">
+                                                        <p class="font-medium text-[12px] leading-[100%] tracking-[0%]">
+                                                            결제대기
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="flex items-center">
+                                                    <img src="./assets/images/thumbnail-dummy-80x80.png" alt="thumbnail"
+                                                        class="w-[80px] max-w-[80px] min-w-[80px] h-[80px] object-cover rounded-[8px]" />
+                                                    <div class="relative w-full pl-[9px] pr-[45px]">
+                                                        <div class="mb-[4px]">
+                                                            <p class="font-normal text-[12px] leading-[100%] tracking-[0%] text-[#6D6F73]">
+                                                                현지 숙박
+                                                            </p>
+                                                        </div>
+                                                        <p class="font-semibold text-[14px] leading-[120%] tracking-[0%] text-[#333]">
+                                                            [하얼빈여행] 하얼빈 타임스테이아파트 호텔숙소
+                                                        </p>
+                                                        <a href="#;" class="absolute right-0 top-1/2 -translate-y-1/2">
+                                                            <img src="./assets/images/outstanding-arrow.svg" alt="icon">
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <div class="px-[20px]">
+                <a href="#;" class="flex items-center justify-center w-full h-[52px] rounded-[8px] border border-[#D1D4DA]">
+                    <p class="font-medium text-[14px] leading-[100%] tracking-[0%] text-[#8D8F94]">
+                        예약 상품 더 보기
+                    </p>
+                </a>
+            </div>
+        </article>
+    </div>
+    <div class="fixed left-0 bottom-0 w-full z-[999999] px-[20px] pb-[16px] lg:!w-[465px] lg:!left-1/2 lg:!ml-[10px]">
+        <div
+        class="relative flex h-[48px] px-[40px] items-center justify-center text-center bg-[rgba(108,111,117,0.7)] rounded-[8px] text-[#fff]">
+            <div class="absolute left-[16px] top-1/2 -translate-y-1/2">
+                <img src="./assets/images/outstanding-warning.svg" alt="icon">
+            </div>
+            <p class="font-medium text-[14px] leading-[100%] tracking-[0%]">
+                미결제 예약건이 있어요!
+            </p>
+            <button class="absolute right-[16px] top-1/2 -translate-y-1/2">
+                <img src="./assets/images/outstanding-popup-close.svg" alt="icon">
+            </button>
+        </div>
+    </div>
+<script>
+    var swiper = new Swiper(".nav-slide", {
+        slidesPerView: "auto",
+        spaceBetween: 0,
+    });
+</script>
+</body>
+</html>
